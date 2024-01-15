@@ -10,9 +10,18 @@ a clean and bright feel grabbed straight out of a distant future!
 * Must be using at least **PHP 8.1**
 * Must be using **Tailwind CSS V3**
 
+## Installing and Setup
+
+1. `composer require aalicki/fusion-core-ui`
+
+## Current Release and Stability
+`v0.0.1-alpha`
+
+⚠️ Not Production or Development Ready Yet.
+
 ## Compatability
 I want this library to be compatabile with other UI's you may rely on. Therefore, it comes with
-an auto-prefix in order to display the components, `<x-fusion-core-ui-_____>`. This is explained in detail below.
+an auto-prefix in order to display the components, `<x-fusion-core-ui-_____>`. This is explained in detail below (coming soon).
 
 ## Roadmap 2024
 

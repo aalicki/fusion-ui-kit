@@ -1,0 +1,34 @@
+{
+    "name": "aalicki/fusion-core-ui",
+    "description": "Laravel Blade Components Library with Tailwind CSS.",
+    "authors": [
+        {
+            "name": "Adam Alicki"
+        }
+    ],
+    "keywords": [
+        "laravel",
+        "laravel components",
+        "fusion core ui",
+        "blade",
+        "tailwind"
+    ],
+    "type": "library",
+    "require": {
+        "php": "^8.1.0",
+        "gehrisandro/tailwind-merge-laravel": "^1.0"
+    },
+    "license": "GPL-3.0 license",
+    "autoload": {
+        "psr-4": {
+            "Aalicki\\FusionCoreUI\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aalicki\\FusionCoreUI\\FusionCoreUIServiceProvider"
+            ]
+        }
+    }
+}

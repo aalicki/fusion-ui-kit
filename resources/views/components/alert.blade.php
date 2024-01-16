@@ -1,5 +1,5 @@
 <div
-    class="mb-3 w-full items-center rounded-lg bg-cyan-200/50 px-4 py-2 text-base text-warning-800 inline-flex border border-cyan-300/60"
+    class="mb-3 w-full items-center rounded-lg {{$type}} px-4 py-2 text-base inline-flex border"
     role="alert">
 
     @isset($icon)
@@ -9,14 +9,14 @@
     @endisset
 
     @if($slot->isNotEmpty())
-        <span class="text-cyan-200 font-semibold">{{ $slot }}</span>
+        <span class="font-semibold">{{ $slot }}</span>
     @endif
 
         @if($dismissible)
             <button
                 type="button"
-                class="ml-auto box-content rounded-none border-none text-cyan-300/80
-                        hover:text-cyan-200
+                class="ml-auto box-content rounded-none border-none
+                        hover:text-white/90
                         focus:opacity-100 focus:shadow-none focus:outline-none"
                 aria-label="Close">
                 <span class="w-[1em] focus:opacity-100">

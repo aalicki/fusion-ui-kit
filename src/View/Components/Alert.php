@@ -44,12 +44,4 @@ class Alert extends Component
     {
         return view('fusion-core-ui::components.alert');
     }
-
-    private function setType()
-    {
-        return match ($this->type) {
-            'warning' => 'bg-red-200/50',
-            default => 'bg-cyan-200/50',
-        };
-    }
 }

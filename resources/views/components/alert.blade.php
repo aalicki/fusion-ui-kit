@@ -1,9 +1,9 @@
 <div
-    class="mb-3 w-full items-center rounded-lg {{$type}} px-4 py-2 text-base inline-flex border"
+    class="mb-3 w-full items-center rounded-xl {{$type}} px-4 py-2 inline-flex border"
     role="alert">
 
     @isset($icon)
-        <span class="pr-3 text-white">
+        <span class="pr-3">
         {!! $icon !!}
         </span>
     @endisset

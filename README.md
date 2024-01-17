@@ -31,7 +31,7 @@ ready for production-level projects.
 
 ### Components
 
-- Alerts
+- Alerts 
 - Avatars
 - Badge
 - Breadcrumbs
@@ -53,6 +53,22 @@ ready for production-level projects.
 - Switch
 - Table
 - Tabs
+---
+
+## Alerts
+
+Full Example, includes an Icon, the Type, and a Dismissible button:
+
+```php
+<x-fusion-core-ui-alert dismissible icon='<i class="fa-brands fa-facebook"></i>' type="info">Fusion Core UI Default Alert.</x-fusion-core-ui-alert>
+```
+
+Basic Example (No, dismissible, icon, with default class):
+
+```php
+<x-fusion-core-ui-alert>Alert based alert.</x-fusion-core-ui-alert>
+```
+
 ---
 
 ## FAQ

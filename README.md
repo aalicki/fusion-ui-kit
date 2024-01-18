@@ -60,13 +60,47 @@ ready for production-level projects.
 Full Example, includes an Icon, the Type, and a Dismissible button:
 
 ```php
-<x-fusion-core-ui-alert dismissible icon='<i class="fa-brands fa-facebook"></i>' type="info">Fusion Core UI Default Alert.</x-fusion-core-ui-alert>
+<x-fusion-core-ui-alert dismissible icon='<i class="fa-solid fa-house"></i>' type="info">Fusion Core UI Default Alert.</x-fusion-core-ui-alert>
 ```
 
 Basic Example (No, dismissible, icon, with default class):
 
 ```php
 <x-fusion-core-ui-alert>Alert based alert.</x-fusion-core-ui-alert>
+```
+
+## Avatars
+
+Avatar with a profile image passed in
+
+```php
+<x-fusion-core-ui-avatar img="https://i.pravatar.cc/60" />
+```
+
+Large Avatar without a label
+
+```php
+<x-fusion-core-ui-avatar size="lg" label="ZX" />
+```
+
+## Badges
+
+Default badge
+
+```php
+<x-fusion-core-ui-badge>Default Badge</x-fusion-core-ui-badge>
+```
+
+Warning Badge
+
+```php
+<x-fusion-core-ui-badge type="warning">Warning Badge</x-fusion-core-ui-badge>
+```
+
+Info Badge with an Icon
+
+```php
+<x-fusion-core-ui-badge type="info" icon='<i class="fa-solid fa-house"></i>'>Warning Badge</x-fusion-core-ui-badge>
 ```
 
 ---

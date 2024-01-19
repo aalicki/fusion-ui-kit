@@ -17,10 +17,16 @@ class Button extends Component
 
     public ?string $type;
 
+    public ?string $btnType;
+
+    public ?string $href;
+
     public function __construct(
         $icon = null,
         $size = null,
-        $type = null
+        $type = null,
+        $btnType = 'button', //submit, reset, button (default)
+        $href = null,
     ) {
 
         $this->icon = $icon;
@@ -41,6 +47,10 @@ class Button extends Component
             'notice' => 'bg-yellow-300/20 text-yellow-300/90 ring-1 ring-inset ring-yellow-300/70 hover:bg-yellow-400/40',
             default => 'bg-cyan-600 text-white ring-1 ring-inset ring-cyan-300/70 hover:bg-cyan-500',
         };
+
+        $this->btnType = $btnType;
+
+        $this->href = $href;
     }
 
     public function render()

@@ -8,6 +8,7 @@
         </a>
     </div>
 
+    @if(isset($body))
     <div class="bg-cyan-800 py-4 px-3">
         <h3 class="mb-2 font-bold text-cyan-500">
             {{$title}}
@@ -18,6 +19,7 @@
             </p>
         </div>
     </div>
+    @endif
 
     @if(isset($footer))
         <div class="bg-cyan-700 px-2 py-2">

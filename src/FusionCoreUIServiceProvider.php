@@ -6,6 +6,9 @@ use Aalicki\FusionCoreUI\View\Components\Alert;
 use Aalicki\FusionCoreUI\View\Components\Avatar;
 use Aalicki\FusionCoreUI\View\Components\Badge;
 use Aalicki\FusionCoreUI\View\Components\Breadcrumbs;
+use Aalicki\FusionCoreUI\View\Components\Button;
+use Aalicki\FusionCoreUI\View\Components\ButtonGroup;
+use Aalicki\FusionCoreUI\View\Components\Card;
 use Illuminate\Support\ServiceProvider;
 
 class FusionCoreUIServiceProvider extends ServiceProvider
@@ -23,7 +26,10 @@ class FusionCoreUIServiceProvider extends ServiceProvider
             Alert::class,
             Avatar::class,
             Badge::class,
-            Breadcrumbs::class
+            Breadcrumbs::class,
+            Button::class,
+            ButtonGroup::class,
+            Card::class
         ];
 
         $this->loadViewComponentsAs('fusion-core-ui', $viewComponents);

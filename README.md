@@ -6,9 +6,10 @@ futuristic styles, clean and sleek. The goal is to allow this library to give yo
 a clean and bright feel grabbed straight out of a distant future!
 
 ## Requirements
-* Must be using at least **Laravel 10**
+* Must be using at least **Laravel 9**
 * Must be using at least **PHP 8.1**
-* Must be using **Tailwind CSS V3**
+* Must be using **Tailwind CSS V3.4**
+  * You will need the Tailwind Form Plugin: https://github.com/tailwindlabs/tailwindcss-forms
 
 ## Installing and Setup
 

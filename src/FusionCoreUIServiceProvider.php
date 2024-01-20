@@ -9,6 +9,9 @@ use Aalicki\FusionCoreUI\View\Components\Breadcrumbs;
 use Aalicki\FusionCoreUI\View\Components\Button;
 use Aalicki\FusionCoreUI\View\Components\ButtonGroup;
 use Aalicki\FusionCoreUI\View\Components\Card;
+use Aalicki\FusionCoreUI\View\Components\DropDown;
+use Aalicki\FusionCoreUI\View\Components\Heading;
+use Aalicki\FusionCoreUI\View\Components\Input;
 use Illuminate\Support\ServiceProvider;
 
 class FusionCoreUIServiceProvider extends ServiceProvider
@@ -29,7 +32,10 @@ class FusionCoreUIServiceProvider extends ServiceProvider
             Breadcrumbs::class,
             Button::class,
             ButtonGroup::class,
-            Card::class
+            Card::class,
+            DropDown::class,
+            Heading::class,
+            Input::class
         ];
 
         $this->loadViewComponentsAs('fusion-core-ui', $viewComponents);

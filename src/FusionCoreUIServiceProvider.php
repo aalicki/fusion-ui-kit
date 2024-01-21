@@ -12,7 +12,9 @@ use Aalicki\FusionCoreUI\View\Components\Card;
 use Aalicki\FusionCoreUI\View\Components\DropDown;
 use Aalicki\FusionCoreUI\View\Components\Heading;
 use Aalicki\FusionCoreUI\View\Components\Input;
+use Aalicki\FusionCoreUI\View\Components\InputGroup;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Validation\Rules\In;
 
 class FusionCoreUIServiceProvider extends ServiceProvider
 {
@@ -35,7 +37,8 @@ class FusionCoreUIServiceProvider extends ServiceProvider
             Card::class,
             DropDown::class,
             Heading::class,
-            Input::class
+            Input::class,
+            InputGroup::class
         ];
 
         $this->loadViewComponentsAs('fusion-core-ui', $viewComponents);

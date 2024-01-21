@@ -9,27 +9,34 @@ class Input extends Component
 
     public ?string $type;
     public ?string $name;
+    public ?string $value;
     public ?string $id;
     public ?string $label;
     public ?string $tip;
     public ?string $placeholder;
     public ?string $size;
     public ?string $color;
+    public ?string $icon;
+    public ?bool $disabled;
 
     public function __construct(
 
         $type           = 'text',
         $name           = null,
+        $value          = null,
         $id             = null,
         $label          = null,
         $tip            = null,
         $placeholder    = null,
         $size           = null,
         $color          = null,
+        $icon           = null,
+        $disabled       = false
     ) {
 
         $this->type         = $type;
         $this->name         = $name;
+        $this->value        = $value;
         $this->id           = $id;
         $this->label        = $label;
         $this->tip          = $tip;
@@ -47,6 +54,8 @@ class Input extends Component
             'notice' => 'bg-yellow-300/20 text-yellow-200 ring-yellow-300/70 placeholder:text-yellow-300/50 focus:ring-yellow-400',
             default => 'bg-cyan-600 text-cyan-200 ring-cyan-300/70 placeholder:text-cyan-300/50 focus:ring-cyan-400',
         };
+        $this->icon         = $icon;
+        $this->disabled     = $disabled;
     }
 
     public function render()

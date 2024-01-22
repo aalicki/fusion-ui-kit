@@ -31,7 +31,7 @@ class Button extends Component
 
         $this->icon = $icon;
 
-        // Switch styles based on type of alert
+        // Switch styles based on type of button
         $this->size = match ($size) {
             'lg' => 'text-2xl px-5 py-4',
             'md' => 'text-lg px-4 py-3',

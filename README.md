@@ -56,6 +56,12 @@ ready for production-level projects.
 - Tabs
 ---
 
+### Javascript
+In order to use dismissible, modals, and . You will need to ensure the JS is being loaded into your
+application
+
+---
+
 ## Alerts
 
 Full Example, includes an Icon, the Type, and a Dismissible button:

@@ -13,7 +13,7 @@
         <input
             type="{{$type}}"
             name="{{$name}}"
-            id="{{$id}}"
+            @if(isset($id)) id="{{$id}}" @endif
             class="{{$size}} {{$color}} block w-full flex-1 rounded-xl border-0 ring-1 ring-inset
                     focus:ring-2 focus:ring-inset leading-6
                     @if($disabled) disabled:cursor-not-allowed @endif

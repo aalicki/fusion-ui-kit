@@ -7,6 +7,8 @@ use Illuminate\View\Component;
 class Button extends Component
 {
 
+    public ?string $class;
+
     /**
      * Icon
      * @var string|mixed|null
@@ -22,6 +24,7 @@ class Button extends Component
     public ?string $href;
 
     public function __construct(
+        $class = null,
         $icon = null,
         $size = null,
         $type = null,
@@ -29,6 +32,7 @@ class Button extends Component
         $href = null,
     ) {
 
+        $this->class = $class;
         $this->icon = $icon;
 
         // Switch styles based on type of button

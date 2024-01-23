@@ -17,7 +17,8 @@
                 type="button"
                 class="ml-auto box-content rounded-none border-none
                         hover:text-white/90
-                        focus:opacity-100 focus:shadow-none focus:outline-none"
+                        focus:opacity-100 focus:shadow-none focus:outline-none
+                        fcui-dismissible"
                 aria-label="Close">
                 <span class="w-[1em] focus:opacity-100">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">

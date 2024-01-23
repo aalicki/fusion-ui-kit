@@ -14,9 +14,11 @@ use Aalicki\FusionCoreUI\View\Components\Heading;
 use Aalicki\FusionCoreUI\View\Components\Input;
 use Aalicki\FusionCoreUI\View\Components\InputGroup;
 use Aalicki\FusionCoreUI\View\Components\ListGroup;
+use Aalicki\FusionCoreUI\View\Components\Modal;
 use Aalicki\FusionCoreUI\View\Components\NavLink;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\Rules\In;
+use PhpParser\Node\Expr\AssignOp\Mod;
 
 class FusionCoreUIServiceProvider extends ServiceProvider
 {
@@ -42,7 +44,8 @@ class FusionCoreUIServiceProvider extends ServiceProvider
             Input::class,
             InputGroup::class,
             ListGroup::class,
-            NavLink::class
+            NavLink::class,
+            Modal::class
         ];
 
         $this->loadViewComponentsAs('fusion-core-ui', $viewComponents);
@@ -51,6 +54,9 @@ class FusionCoreUIServiceProvider extends ServiceProvider
             $this->publishes([
                 __DIR__.'/../resources/views/themes/' => $this->app->resourcePath('views/vendor/fusion-core-ui/themes')
             ], 'fusion-core-ui-themes');
+            $this->publishes([
+                __DIR__.'/../resources/js/' => public_path('storage/vendor/fusion-core-ui/')
+            ], 'fusion-core-js');
         }
     }
 

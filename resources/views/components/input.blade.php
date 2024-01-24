@@ -25,6 +25,6 @@
     </div>
 
     @if(isset($tip))
-        <p class="mt-2 text-sm text-cyan-700">{{$tip}}</p>
+        <p class="mt-2 mb-2 text-sm text-cyan-700">{{$tip}}</p>
     @endif
 </div>

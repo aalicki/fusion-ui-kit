@@ -15,6 +15,7 @@ use Aalicki\FusionCoreUI\View\Components\Input;
 use Aalicki\FusionCoreUI\View\Components\InputGroup;
 use Aalicki\FusionCoreUI\View\Components\ListGroup;
 use Aalicki\FusionCoreUI\View\Components\Modal;
+use Aalicki\FusionCoreUI\View\Components\NavBar;
 use Aalicki\FusionCoreUI\View\Components\NavLink;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\Rules\In;
@@ -45,7 +46,8 @@ class FusionCoreUIServiceProvider extends ServiceProvider
             InputGroup::class,
             ListGroup::class,
             NavLink::class,
-            Modal::class
+            Modal::class,
+            NavBar::class
         ];
 
         $this->loadViewComponentsAs('fusion-core-ui', $viewComponents);

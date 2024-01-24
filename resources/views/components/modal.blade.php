@@ -1,4 +1,4 @@
-<dialog class="{{$bg}} {{$size}} rounded-lg drop-shadow-2xl"
+<dialog class="{{$bg}} {{$size}} rounded-lg drop-shadow-2xl w-full sm:w-1/3 overscroll-y-contain"
         id="{{$id}}">
 
     @if(!$confirmBtn)

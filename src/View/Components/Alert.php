@@ -2,6 +2,7 @@
 
 namespace Aalicki\FusionCoreUI\View\Components;
 
+use Aalicki\FusionCoreUI\Fusion;
 use Illuminate\View\Component;
 
 class Alert extends Component

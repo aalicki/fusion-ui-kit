@@ -9,11 +9,11 @@ class NavLink extends Component
 
     public ?bool $active;
     public ?string $classes;
-    public ?string $href = null;
-    public ?string $icon = null;
-    public ?string $id = null;
+    public ?string $href;
+    public ?string $icon;
+    public ?string $id;
     public ?bool $border;
-    public ?string $size = null;
+    public ?string $size;
 
     public function __construct(
         $active = false,

@@ -18,6 +18,8 @@ use Aalicki\FusionCoreUI\View\Components\Modal;
 use Aalicki\FusionCoreUI\View\Components\NavBar;
 use Aalicki\FusionCoreUI\View\Components\NavLink;
 use Aalicki\FusionCoreUI\View\Components\Pagination;
+use Aalicki\FusionCoreUI\View\Components\Pricing;
+use Aalicki\FusionCoreUI\View\Components\PricingPanel;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\Rules\In;
 use PhpParser\Node\Expr\AssignOp\Mod;
@@ -49,7 +51,9 @@ class FusionCoreUIServiceProvider extends ServiceProvider
             NavLink::class,
             Modal::class,
             NavBar::class,
-            Pagination::class
+            Pagination::class,
+            Pricing::class,
+            PricingPanel::class,
         ];
 
         $this->loadViewComponentsAs('fusion-core-ui', $viewComponents);

@@ -10,10 +10,12 @@ class Stats extends Component
 
     public ?string $bg;
     public ?int $columns;
+    public ?string $spacing;
 
     public function __construct(
-        $bg = 'default',
-        $columns = 4,
+        $bg         = 'default',
+        $columns    = 4,
+        $spacing    = "1px"
     ) {
 
         $this->bg = match ($bg) {
@@ -26,6 +28,7 @@ class Stats extends Component
         };
 
         $this->columns = $columns;
+        $this->spacing = $spacing;
     }
 
     public function render()

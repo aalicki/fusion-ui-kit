@@ -7,8 +7,8 @@ use Illuminate\View\Component;
 class Pricing extends Component
 {
 
-    public ?string $columns;
     public ?string $bg;
+    public ?string $columns;
 
     public function __construct(
         $columns = 3,

@@ -49,7 +49,6 @@ ready for production-level projects.
 - Pagination
 - Pricing
 - Progress Bar
-- Radio Groups
 - Stats
 - Switch
 - Table

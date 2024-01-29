@@ -23,6 +23,7 @@ use Aalicki\FusionCoreUI\View\Components\PricingPanel;
 use Aalicki\FusionCoreUI\View\Components\ProgressBar;
 use Aalicki\FusionCoreUI\View\Components\StatBlock;
 use Aalicki\FusionCoreUI\View\Components\Stats;
+use Aalicki\FusionCoreUI\View\Components\SwitchRadio;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\Rules\In;
 use PhpParser\Node\Expr\AssignOp\Mod;
@@ -59,7 +60,8 @@ class FusionCoreUIServiceProvider extends ServiceProvider
             PricingPanel::class,
             ProgressBar::class,
             Stats::class,
-            StatBlock::class
+            StatBlock::class,
+            SwitchRadio::class
         ];
 
         $this->loadViewComponentsAs('fusion-core-ui', $viewComponents);

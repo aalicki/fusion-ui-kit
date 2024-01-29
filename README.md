@@ -50,7 +50,7 @@ ready for production-level projects.
 - Pricing
 - Progress Bar
 - Stats
-- Switch
+- Switch (Radio)
 - Table
 - Tabs
 ---

@@ -26,6 +26,7 @@ use Aalicki\FusionCoreUI\View\Components\Stats;
 use Aalicki\FusionCoreUI\View\Components\SwitchRadio;
 use Aalicki\FusionCoreUI\View\Components\Table;
 use Aalicki\FusionCoreUI\View\Components\TableRow;
+use Aalicki\FusionCoreUI\View\Components\Tabs;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\Rules\In;
 use PhpParser\Node\Expr\AssignOp\Mod;
@@ -65,7 +66,8 @@ class FusionCoreUIServiceProvider extends ServiceProvider
             StatBlock::class,
             SwitchRadio::class,
             Table::class,
-            TableRow::class
+            TableRow::class,
+            Tabs::class
         ];
 
         $this->loadViewComponentsAs('fusion-core-ui', $viewComponents);

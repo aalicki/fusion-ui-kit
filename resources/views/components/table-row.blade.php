@@ -1,3 +1,3 @@
-<tr class="{{$rowStyle}} transition duration-300 ease-in-out">
+<tr class="{{$rowStyle}} transition duration-500 ease-out">
     {{$slot}}
 </tr>

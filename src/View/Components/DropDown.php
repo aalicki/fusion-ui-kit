@@ -9,13 +9,16 @@ class DropDown extends Component
 
     public ?string $label;
     public ?string $name;
+    public ?string $id;
 
     public function __construct(
-        $label = null,
-        $name = null
+        $label  = null,
+        $name   = null,
+        $id     = null
     ) {
-        $this->label = $label;
-        $this->name = $name;
+        $this->label    = $label;
+        $this->name     = $name;
+        $this->id       = $id;
     }
 
     public function render()

@@ -23,17 +23,20 @@ class Button extends Component
 
     public ?string $href;
 
+    public ?bool $btnGroup;
+
     public function __construct(
-        $class = null,
-        $icon = null,
-        $size = null,
-        $type = null,
-        $btnType = 'button', //submit, reset, button (default)
-        $href = null,
+        $class      = null,
+        $icon       = null,
+        $size       = null,
+        $type       = null,
+        $btnType    = 'button', //submit, reset, button (default)
+        $href       = null,
+        $btnGroup   = false,
     ) {
 
-        $this->class = $class;
-        $this->icon = $icon;
+        $this->class    = $class;
+        $this->icon     = $icon;
 
         // Switch styles based on type of button
         $this->size = match ($size) {
@@ -52,9 +55,9 @@ class Button extends Component
             default => 'bg-cyan-600 text-white ring-1 ring-inset ring-cyan-300/70 hover:bg-cyan-500',
         };
 
-        $this->btnType = $btnType;
-
-        $this->href = $href;
+        $this->btnType  = $btnType;
+        $this->href     = $href;
+        $this->btnGroup = $btnGroup;
     }
 
     public function render()

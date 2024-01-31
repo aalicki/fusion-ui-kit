@@ -19,7 +19,7 @@ class Heading extends Component
         $this->subheading   = $subheading;
 
         $this->alignment = match ($alignment) {
-            'left' => 'text-left',
+            'left'  => 'text-left',
             'right' => 'text-right	',
             default => 'mx-auto text-center',
         };

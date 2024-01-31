@@ -16,9 +16,9 @@ class Card extends Component
         $body   = null,
         $image  = null
     ) {
-        $this->title = $title;
-        $this->body = $body;
-        $this->image = $image;
+        $this->title    = $title;
+        $this->body     = $body;
+        $this->image    = $image;
     }
 
     public function render()

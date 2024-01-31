@@ -18,18 +18,18 @@ class Avatar extends Component
     public ?string $label;
 
     public function __construct(
-        $img = null,
-        $size = null,
-        $label = null
+        $img    = null,
+        $size   = null,
+        $label  = null
     ) {
 
         $this->img = $img;
 
         // Switch styles based on type of alert
         $this->size = match ($size) {
-            'lg' => 'h-28 w-28',
-            'md' => 'h-16 w-16',
-            'sm' => 'h-10 w-10',
+            'lg'    => 'h-28 w-28',
+            'md'    => 'h-16 w-16',
+            'sm'    => 'h-10 w-10',
             default => 'h-20 w-20',
         };
 

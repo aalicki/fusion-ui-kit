@@ -3,8 +3,7 @@
      aria-valuemin="0"
      aria-valuemax="100">
 
-    <div
-        class="flex flex-col rounded-full overflow-hidden {{$innerBarBg}}"
+    <div class="flex flex-col rounded-full overflow-hidden {{$innerBarBg}}"
         style="width: {{$completion}}%">
     </div>
 </div>

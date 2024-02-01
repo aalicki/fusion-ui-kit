@@ -6,6 +6,9 @@
             "name": "Adam Alicki"
         }
     ],
+    "support": {
+        "issues": "https://github.com/aalicki/fusion-ui-kit/issues"
+    },
     "keywords": [
         "laravel",
         "laravel components",

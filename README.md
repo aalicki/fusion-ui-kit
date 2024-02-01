@@ -1,5 +1,17 @@
 <img src="fusion-core-ui-logo.png">
 
+-----
+
+<div id="header" align="center">
+
+[![image](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com/)
+[![image](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![Github All Releases](https://img.shields.io/github/downloads/aalicki/fusion-ui-kit/total.svg?style=flat)]()
+
+</div>
+
 ## About Fusion Core UI
 Fusion Core UI is a Laravel Blade & Tailwind CSS component library. It draws inspiration from
 futuristic styles, clean and sleek. The goal is to allow this library to give your next app or project
@@ -161,8 +173,9 @@ A default sized button with a theme and icon
 
 ```php
 <x-fusion-core-ui-button-group>
-    <x-fusion-core-ui-button>Button</x-fusion-core-ui-button>
-    <x-fusion-core-ui-button>Button Two</x-fusion-core-ui-button>
+    <x-fusion-core-ui-button :btnGroup="true" size="md" type="info" icon='<i class="fa-solid fa-star"></i>'>Button 1</x-fusion-core-ui-button>
+    <x-fusion-core-ui-button :btnGroup="true" size="md" type="success">Button 2</x-fusion-core-ui-button>
+    <x-fusion-core-ui-button :btnGroup="true" size="md" type="warning">Button 3</x-fusion-core-ui-button>
 </x-fusion-core-ui-button-group>
 ```
 

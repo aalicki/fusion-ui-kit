@@ -7,8 +7,23 @@ use Illuminate\View\Component;
 
 class Tabs extends Component
 {
+
+    /**
+     * Background color
+     * @var string|mixed|null
+     */
     public ?string $bg;
+
+    /**
+     * Any additional classes applied to the button
+     * @var string|mixed|null
+     */
     public ?string $classes;
+
+    /**
+     * Theme / UI Color of the tabs
+     * @var string|null
+     */
     public ?string $type;
 
     public function __construct(

@@ -8,9 +8,28 @@ use Illuminate\View\Component;
 class ProgressBar extends Component
 {
 
+    /**
+     * Color / UI Theme for progress bar
+     * @var string|null
+     */
     public ?string $type;
+
+    /**
+     * Color of the inner progress bar
+     * @var string|null
+     */
     public ?string $innerBarBg;
+
+    /**
+     * % of complete, max 100, minimum 0
+     * @var int|mixed|null
+     */
     public ?int $completion;
+
+    /**
+     * Height of the progress bar
+     * @var int|mixed|null
+     */
     public ?int $height;
 
     public function __construct(

@@ -7,7 +7,16 @@ use Illuminate\View\Component;
 class Pricing extends Component
 {
 
+    /**
+     * Background / Color theme
+     * @var string|null
+     */
     public ?string $bg;
+
+    /**
+     * Number of columns
+     * @var string|int|mixed|null
+     */
     public ?string $columns;
 
     public function __construct(

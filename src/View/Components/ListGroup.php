@@ -7,12 +7,31 @@ use Illuminate\View\Component;
 class ListGroup extends Component
 {
 
+    /**
+     * Background color
+     * @var string|null
+     */
     public ?string $bg;
+
+    /**
+     * if a border should be shown around the List Group
+     * @var bool|mixed|null
+     */
     public ?bool $border;
 
     public function __construct(
 
-        $bg     = null,
+        /**
+         * Background theme
+         * @var string|mixed|null
+         */
+        $bg = null,
+
+        /**
+         * Display a border around the ilist group
+         * True / False
+         * @var bool|null
+         */
         $border = false,
     ) {
 

@@ -7,12 +7,41 @@ use Illuminate\View\Component;
 class NavLink extends Component
 {
 
+    /**
+     * If the Navlink is active (current page)
+     * @var bool|mixed|null
+     */
     public ?bool $active;
+
+    /**
+     * Additional classes to be applied to component
+     * @var string|mixed|null
+     */
     public ?string $classes;
+
+    /**
+     * HREF to link too
+     * @var string|mixed|null
+     */
     public ?string $href;
+
+    /**
+     * Icon to prepend to text
+     * @var string|mixed|null
+     */
     public ?string $icon;
+
+    /**
+     * id of link
+     * @var string|mixed|null
+     */
     public ?string $id;
-    public ?bool $border;
+
+    /**
+     * Link size
+     * Default, small, medium, large
+     * @var string|null
+     */
     public ?string $size;
 
     public function __construct(
@@ -21,7 +50,6 @@ class NavLink extends Component
         $href       = null,
         $icon       = null,
         $id         = null,
-        $border     = false,
         $size       = 'default'
     ) {
 
@@ -30,7 +58,6 @@ class NavLink extends Component
         $this->href     = $href;
         $this->icon     = $icon;
         $this->id       = $id;
-        $this->border   = $border;
         $this->size     = match ($size) {
             'lg' => 'text-2xl px-5 py-4',
             'md' => 'text-lg px-4 py-3',

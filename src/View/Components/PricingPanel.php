@@ -7,7 +7,17 @@ use Illuminate\View\Component;
 class PricingPanel extends Component
 {
 
+    /**
+     * If panel should expand on hover
+     * True / False
+     * @var bool|mixed|null
+     */
     public ?bool $hoverEffect;
+
+    /**
+     * Color / UI Theme of panel
+     * @var string|null
+     */
     public ?string $type;
 
     public function __construct(

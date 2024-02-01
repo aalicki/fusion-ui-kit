@@ -8,8 +8,22 @@ use Illuminate\View\Component;
 class SwitchRadio extends Component
 {
 
+    /**
+     * Background color
+     * @var string|null
+     */
     public ?string $bg;
+
+    /**
+     * id of the radio input
+     * @var string|mixed|null
+     */
     public ?string $id;
+
+    /**
+     * Color of the circle dial / indicator
+     * @var string|null
+     */
     public ?string $dialBg;
 
     public function __construct(

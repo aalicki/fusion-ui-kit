@@ -8,6 +8,10 @@ use Illuminate\View\Component;
 class TableRow extends Component
 {
 
+    /**
+     * Color / UI Theme of the row
+     * @var string|null
+     */
     public ?string $rowStyle;
 
     public function __construct(

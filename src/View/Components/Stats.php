@@ -8,8 +8,22 @@ use Illuminate\View\Component;
 class Stats extends Component
 {
 
+    /**
+     * Background color
+     * @var string|null
+     */
     public ?string $bg;
+
+    /**
+     * Number of columns
+     * @var int|mixed|null
+     */
     public ?int $columns;
+
+    /**
+     * Space of divide between stats
+     * @var string|mixed|null
+     */
     public ?string $spacing;
 
     public function __construct(

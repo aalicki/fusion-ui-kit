@@ -8,7 +8,16 @@ use Illuminate\View\Component;
 class Table extends Component
 {
 
+    /**
+     * Head Background color
+     * @var string|null
+     */
     public ?string $headBg;
+
+    /**
+     * Border color and style of outline border
+     * @var string|null
+     */
     public ?string $outerBorder;
 
     public function __construct(

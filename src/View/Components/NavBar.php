@@ -7,12 +7,47 @@ use Illuminate\View\Component;
 class NavBar extends Component
 {
 
+    /**
+     * Background and color Theme
+     * @var string|null
+     */
     public ?string $bg;
+
+    /**
+     * Home page logo
+     * @var string|mixed|null
+     */
     public ?string $logo;
+
+    /**
+     * If Navbar is full width
+     * True / False
+     * @var bool|mixed|null
+     */
     public ?bool $fullWidth;
+
+    /**
+     * Right-side menu buttons
+     * @var string|mixed|null
+     */
     public ?string $rightMenuButtons;
+
+    /**
+     * Icon to show for smaller screens
+     * @var string|mixed|null
+     */
     public ?string $mobileMenuIcon;
+
+    /**
+     * Footer content for smaller screens
+     * @var string|mixed|null
+     */
     public ?string $mobileFooter;
+
+    /**
+     * Additional classes to be applied to component
+     * @var string|mixed|null
+     */
     public ?string $classes;
 
     public function __construct(

@@ -7,11 +7,43 @@ use Illuminate\View\Component;
 class Modal extends Component
 {
 
+    /**
+     * Show a confirmation button
+     * True / False
+     * @var string|false|mixed|null
+     */
     public ?string $confirmBtn;
+
+    /**
+     * id of the modal (Required for JS)
+     * @var string|mixed|null
+     */
     public ?string $id;
+
+    /**
+     * Icon to be displayed top center of modal
+     * @var string|mixed|null
+     */
     public ?string $icon;
+
+    /**
+     * Show a Backdrop, blurs and darkens non-modal content
+     * True / False
+     * @var bool|mixed|null
+     */
     public ?bool $backdrop;
+
+    /**
+     * Background color and modal theme
+     * @var string|null
+     */
     public ?string $bg;
+
+    /**
+     * Modal Size
+     * Default, small, medium, large
+     * @var string|null
+     */
     public ?string $size;
 
     public function __construct(

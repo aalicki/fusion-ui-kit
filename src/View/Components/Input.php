@@ -62,7 +62,18 @@ class Input extends Component
      * @var string|null
      */
     public ?string $inputType;
+
+    /**
+     * Icon to inject into input
+     * @var string|mixed|null
+     */
     public ?string $icon;
+
+    /**
+     * If the input is disabled
+     * True / False
+     * @var bool|mixed|null
+     */
     public ?bool $disabled;
 
     public function __construct(

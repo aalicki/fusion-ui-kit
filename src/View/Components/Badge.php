@@ -7,7 +7,16 @@ use Illuminate\View\Component;
 class Badge extends Component
 {
 
+    /**
+     * Type / Color Theme
+     * @var string|null
+     */
     public ?string $type;
+
+    /**
+     * Icon to append before text (or standalone)
+     * @var string|mixed|null
+     */
     public ?string $icon;
 
     public function __construct(

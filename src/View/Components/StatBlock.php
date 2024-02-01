@@ -8,8 +8,22 @@ use Illuminate\View\Component;
 class StatBlock extends Component
 {
 
+    /**
+     * Stat or Metric
+     * @var string|mixed|null
+     */
     public ?string $stat;
+
+    /**
+     * Text label for the stat
+     * @var string|mixed|null
+     */
     public ?string $label;
+
+    /**
+     * Color / UI Theme of stat block
+     * @var string|null
+     */
     public ?string $type;
 
     public function __construct(

@@ -59,7 +59,7 @@ ready for production-level projects.
 - Modal
 - Navbar
 - Nav Links
-- Pagination
+- 🚫 Pagination - Not Ready
 - Pricing
 - Progress Bar
 - Stats

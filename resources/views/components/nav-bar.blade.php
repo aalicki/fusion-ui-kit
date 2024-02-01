@@ -1,4 +1,5 @@
-<nav class="{{$classes}} {{$bg}} relative px-4 py-4 flex justify-between items-center
+<nav
+    class="{{$classes}} {{$bg}} relative px-4 py-4 flex justify-between items-center
             @if($fullWidth) w-full @else border rounded-lg @endif">
 
     @if(isset($logo))
@@ -23,7 +24,10 @@
 <!-- Mobile -->
 <div class="navbar-menu relative z-10 hidden">
     <div class="navbar-backdrop fixed inset-0 backdrop-blur-sm bg-black/10"></div>
-    <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-3/4 py-6 px-10 bg-cyan-700 overflow-y-auto">
+
+    <nav
+        class="fixed top-0 left-0 bottom-0 flex flex-col w-3/4 py-6 px-10 bg-cyan-700 overflow-y-auto">
+
         <div class="flex mb-8">
 
             @if(isset($logo))

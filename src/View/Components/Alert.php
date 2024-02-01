@@ -15,11 +15,15 @@ class Alert extends Component
     public ?bool $dismissible;
 
     /**
-     * Icon displayed to the left of the text
+     * Icon appended to Alert text
      * @var string|mixed|null
      */
     public ?string $icon;
 
+    /**
+     * Type of alert (sets the color scheme)
+     * @var string|null
+     */
     public ?string $type;
 
     public function __construct(

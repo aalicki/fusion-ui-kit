@@ -8,7 +8,6 @@ class Badge extends Component
 {
 
     public ?string $type;
-
     public ?string $icon;
 
     public function __construct(

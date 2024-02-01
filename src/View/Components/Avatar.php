@@ -7,10 +7,22 @@ use Illuminate\View\Component;
 class Avatar extends Component
 {
 
+    /**
+     * Image to display inside component
+     * @var string|mixed|null
+     */
     public ?string $img;
 
+    /**
+     * Background Color of Avatar (when no image is present)
+     * @var string|null
+     */
     public ?string $bgColor;
 
+    /**
+     * Border color around the Avatar
+     * @var string|null
+     */
     public ?string $borderColor;
 
     /**
@@ -19,6 +31,10 @@ class Avatar extends Component
      */
     public ?string $size;
 
+    /**
+     * Label of Avatar (best limited to two characters)
+     * @var string|mixed|null
+     */
     public ?string $label;
 
     public function __construct(

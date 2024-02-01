@@ -7,8 +7,22 @@ use Illuminate\View\Component;
 class DropDown extends Component
 {
 
+    /**
+     * Text to associate Dropdown with
+     * @var string|mixed|null
+     */
     public ?string $label;
+
+    /**
+     * input name, used for POST fetching
+     * @var string|mixed|null
+     */
     public ?string $name;
+
+    /**
+     * id of the Dropdown
+     * @var string|mixed|null
+     */
     public ?string $id;
 
     public function __construct(

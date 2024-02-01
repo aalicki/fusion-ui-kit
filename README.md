@@ -69,8 +69,10 @@ ready for production-level projects.
 ---
 
 ### Javascript
-In order to use dismissible, modals, and . You will need to ensure the JS is being loaded into your
-application
+In order to use dismissible, modals, and You will need to ensure the JS is being loaded into your
+application. 
+
+This package has _**less than 10 lines**_ of JS currently.
 
 ---
 
@@ -238,7 +240,7 @@ Basic input group with 3 columns
 ```php
 <x-fusion-core-ui-input-group columns="3">
 
-    <x-fusion-core-ui-input label="First Name" placeholder="First" />
+    <x-fusion-core-ui-input label="First Name" placeholder="First" type="success"/>
 
     <x-fusion-core-ui-input label="Middle Name" placeholder="Middle" />
 
@@ -348,6 +350,8 @@ A basic example of the Navlink
 ```
 
 ## Pagination
+
+⚠️ This component is not functional yet.
 
 A basic Pagination component with the `previous` and `next` buttons hidden.
 

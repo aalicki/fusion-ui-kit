@@ -7,6 +7,10 @@ use Illuminate\View\Component;
 class Button extends Component
 {
 
+    /**
+     * Any additional classes applied to the button
+     * @var string|mixed|null
+     */
     public ?string $class;
 
     /**
@@ -15,14 +19,36 @@ class Button extends Component
      */
     public ?string $icon;
 
+    /**
+     * Size of the button
+     * Default, Small, Medium, Large
+     * @var string|null
+     */
     public ?string $size;
 
+    /**
+     * Type / Color Theme
+     * @var string|null
+     */
     public ?string $type;
 
+    /**
+     * <a> or <button>
+     * @var string|mixed|null
+     */
     public ?string $btnType;
 
+    /**
+     * HREF to link to if <a>
+     * @var string|mixed|null
+     */
     public ?string $href;
 
+    /**
+     * Is inside a Button Group?
+     * True / False
+     * @var bool|mixed|null
+     */
     public ?bool $btnGroup;
 
     public function __construct(

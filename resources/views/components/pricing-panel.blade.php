@@ -1,7 +1,11 @@
-<li class="w-full px-10 pt-16 pb-8 {{$type}} rounded-lg @if($hoverEffect) hover:scale-105 transition-all duration-300 ease-in @endif relative">
+<li
+    class="w-full px-10 pt-16 pb-8 {{$type}} rounded-lg relative
+            @if($hoverEffect) hover:scale-105 transition-all duration-300 ease-in @endif">
 
     @if(isset($specialText))
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 rounded-br-xl rounded-bl-xl text-cyan-100 px-8 py-2 bg-cyan-500 font-bold">
+        <div
+            class="absolute top-0 left-1/2 -translate-x-1/2 rounded-br-xl rounded-bl-xl
+                    text-cyan-100 px-8 py-2 bg-cyan-500 font-bold">
             {{$specialText}}
         </div>
     @endif

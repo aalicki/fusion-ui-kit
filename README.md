@@ -28,7 +28,7 @@ a clean and bright feel grabbed straight out of a distant future!
 1. `composer require aalicki/fusion-core-ui`
 
 ## Current Release and Stability
-`v0.0.1-alpha`
+`v0.0.2-alpha`
 
 ⚠️ Not Production or Development Ready Yet.
 

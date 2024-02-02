@@ -70,7 +70,7 @@ class FusionCoreUIServiceProvider extends ServiceProvider
             Tabs::class
         ];
 
-        $this->loadViewComponentsAs('fusion-core-ui', $viewComponents);
+        $this->loadViewComponentsAs('fcui', $viewComponents);
 
         if ($this->app->runningInConsole()) {
             $this->publishes([

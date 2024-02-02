@@ -1,6 +1,10 @@
-<img src="fusion-core-ui-logo.png">
+<div>&nbsp;</div>
 
------
+<div align="center">
+<img src="fusion-core-ui-logo.png">
+</div>
+
+----
 
 <div id="header" align="center">
 
@@ -11,6 +15,43 @@
 [![Github All Releases](https://img.shields.io/github/downloads/aalicki/fusion-ui-kit/total.svg?style=flat)]()
 
 </div>
+
+---
+
+## Contents
+
+* [About Fusion Core UI](#about-fusion-core-ui)
+* [Requirements](#requirements)
+* [Installation & Setup](#installing-and-setup)
+* [Current Stability](#current-release-and-stability)
+* [Compatability](#compatability)
+* [Roadmap](#roadmap-2024)
+* [Components](#components)
+  * [Alerts](#alerts)
+  * [Avatars](#avatars)
+  * [Badges](#badges)
+  * [Breadcrumbs](#breadcrumbs)
+  * [Buttons](#buttons)
+  * [Button Groups](#button-group)
+  * [Cards](#card)
+  * [Dropdowns](#dropdown)
+  * [Headings](#heading)
+  * [Inputs](#input)
+  * [Input Groups](#input-group)
+  * [List Groups](#list-group)
+  * [Modals](#modal)
+  * [Nav Bars](#navbar)
+  * [Nav Links](#navlinks)
+  * [Pagination](#pagination) - Broken
+  * [Pricing](#pricing)
+  * [Progress Bars](#progress-bar)
+  * [Stats](#stats)
+  * [Switches (Radio)](#switch-radio)
+  * [Tables](#table)
+  * [Tabs](#tabs)
+* [FAQ](#faq)
+* [Maintainers](#maintainers)
+---
 
 ## About Fusion Core UI
 Fusion Core UI is a Laravel Blade & Tailwind CSS component library. It draws inspiration from
@@ -34,7 +75,7 @@ a clean and bright feel grabbed straight out of a distant future!
 
 ## Compatability
 I want this library to be compatabile with other UI's you may rely on. Therefore, it comes with
-an auto-prefix in order to display the components, `<x-fusion-core-ui-_____>`. This is explained in detail below (coming soon).
+an auto-prefix in order to display the components, `<x-fcui-_____>`. This is explained in detail below (coming soon).
 
 ## Roadmap 2024
 
@@ -44,28 +85,28 @@ ready for production-level projects.
 
 ### Components
 
-- Alerts 
-- Avatars
-- Badge
-- Breadcrumbs
-- Button
-- Button Group
-- Card
-- Dropdown
-- Heading
-- Input
-- Input Group
-- List Group
-- Modal
-- Navbar
-- Nav Links
-- 🚫 Pagination - Not Ready
-- Pricing
-- Progress Bar
-- Stats
-- Switch (Radio)
-- Table
-- Tabs
+* [Alerts](#alerts)
+* [Avatars](#avatars)
+* [Badges](#badges)
+* [Breadcrumbs](#breadcrumbs)
+* [Buttons](#buttons)
+* [Button Groups](#button-group)
+* [Cards](#card)
+* [Dropdowns](#dropdown)
+* [Headings](#heading)
+* [Inputs](#input)
+* [Input Groups](#input-group)
+* [List Groups](#list-group)
+* [Modals](#modal)
+* [Nav Bars](#navbar)
+* [Nav Links](#navlinks)
+* ❌ [Pagination](#pagination) - Broken
+* [Pricing](#pricing)
+* [Progress Bars](#progress-bar)
+* [Stats](#stats)
+* [Switches (Radio)](#switch-radio)
+* [Tables](#table)
+* [Tabs](#tabs)
 ---
 
 ### Javascript
@@ -90,48 +131,48 @@ More examples, list of properties and demonstration can be found on the [fusionc
 
 Full Example, includes an Icon, the Type, and a Dismissible button:
 
-```php
-<x-fusion-core-ui-alert dismissible icon='<i class="fa-solid fa-house"></i>' type="info">Fusion Core UI Default Alert.</x-fusion-core-ui-alert>
+```html
+<x-fcui-alert dismissible icon='<i class="fa-solid fa-house"></i>' type="info">Fusion Core UI Default Alert.</x-fcui-alert>
 ```
 
 Basic Example (No, dismissible, icon, with default class):
 
-```php
-<x-fusion-core-ui-alert>Alert based alert.</x-fusion-core-ui-alert>
+```html
+<x-fcui-alert>Alert based alert.</x-fcui-alert>
 ```
 
 ## Avatars
 
 Avatar with a profile image passed in
 
-```php
-<x-fusion-core-ui-avatar img="https://i.pravatar.cc/60" />
+```html
+<x-fcui-avatar img="https://i.pravatar.cc/60" />
 ```
 
 Large Avatar without a label
 
-```php
-<x-fusion-core-ui-avatar size="lg" label="ZX" />
+```html
+<x-fcui-avatar size="lg" label="ZX" />
 ```
 
 ## Badges
 
 Default badge
 
-```php
-<x-fusion-core-ui-badge>Default Badge</x-fusion-core-ui-badge>
+```html
+<x-fcui-badge>Default Badge</x-fcui-badge>
 ```
 
 Warning Badge
 
-```php
-<x-fusion-core-ui-badge type="warning">Warning Badge</x-fusion-core-ui-badge>
+```html
+<x-fcui-badge type="warning">Warning Badge</x-fcui-badge>
 ```
 
 Info Badge with an Icon
 
-```php
-<x-fusion-core-ui-badge type="info" icon='<i class="fa-solid fa-house"></i>'>Warning Badge</x-fusion-core-ui-badge>
+```html
+<x-fcui-badge type="info" icon='<i class="fa-solid fa-house"></i>'>Warning Badge</x-fcui-badge>
 ```
 
 ## Breadcrumbs
@@ -155,36 +196,36 @@ A basic Breadcrumb component. This accepts an array of links and their URL, whic
 ];
 ```
 
-```php
-<x-fusion-core-ui-breadcrumbs :linksArray="$linkArr"/>
+```html
+<x-fcui-breadcrumbs :linksArray="$linkArr"/>
 ```
 
 ## Buttons
 
 A small button
-```php
-<x-fusion-core-ui-button size="sm">Small Button</x-fusion-core-ui-button>
+```html
+<x-fcui-button size="sm">Small Button</x-fcui-button>
 ```
 
 A default sized button with a theme and icon
-```php
-<x-fusion-core-ui-button type="warning" icon='<i class="fa-solid fa-star"></i>'></x-fusion-core-ui-button>
+```html
+<x-fcui-button type="warning" icon='<i class="fa-solid fa-star"></i>'></x-fcui-button>
 ```
 
 ## Button Group
 
-```php
-<x-fusion-core-ui-button-group>
-    <x-fusion-core-ui-button :btnGroup="true" size="md" type="info" icon='<i class="fa-solid fa-star"></i>'>Button 1</x-fusion-core-ui-button>
-    <x-fusion-core-ui-button :btnGroup="true" size="md" type="success">Button 2</x-fusion-core-ui-button>
-    <x-fusion-core-ui-button :btnGroup="true" size="md" type="warning">Button 3</x-fusion-core-ui-button>
-</x-fusion-core-ui-button-group>
+```html
+<x-fcui-button-group>
+    <x-fcui-button :btnGroup="true" size="md" type="info" icon='<i class="fa-solid fa-star"></i>'>Button 1</x-fcui-button>
+    <x-fcui-button :btnGroup="true" size="md" type="success">Button 2</x-fcui-button>
+    <x-fcui-button :btnGroup="true" size="md" type="warning">Button 3</x-fcui-button>
+</x-fcui-button-group>
 ```
 
 ## Card
 
-```php
-<x-fusion-core-ui-card>
+```html
+<x-fcui-card>
     <x-slot:image>
         <img src="https://picsum.photos/400/400" alt="Random Image">
     </x-slot:image>
@@ -199,83 +240,83 @@ A default sized button with a theme and icon
     </x-slot:body>
 
     <x-slot:footer>
-        <x-fusion-core-ui-button href="/next/page">Go To Article</x-fusion-core-ui-button>
+        <x-fcui-button href="/next/page">Go To Article</x-fcui-button>
     </x-slot:footer>
-</x-fusion-core-ui-card>
+</x-fcui-card>
 ```
 
 ## Dropdown
 
-```php
-<x-fusion-core-ui-drop-down name="form-name">
+```html
+<x-fcui-drop-down name="form-name">
     <x-slot:options>
         <option value="pizza">Pizza</option>
         <option value="burger" selected>Burger</option>
         <option value="hot-dog">Hot Dog</option>
     </x-slot:options>
-</x-fusion-core-ui-drop-down>
+</x-fcui-drop-down>
 ```
 
 ## Heading
 
-```php
-<x-fusion-core-ui-heading subheading="This is a subheading." alignment="left">This is a heading!</x-fusion-core-ui-heading>
+```html
+<x-fcui-heading subheading="This is a subheading." alignment="left">This is a heading!</x-fcui-heading>
 ```
 
 ## Input
 
 Input with a label, placeholder text, and a tip (small text shown under input)
-```php
-<x-fusion-core-ui-input label="Email" placeholder="example placeholder" tip="This is a helpful tip, keep it short."/>
+```html
+<x-fcui-input label="Email" placeholder="example placeholder" tip="This is a helpful tip, keep it short."/>
 ```
 
 Disabled input
-```php
-<x-fusion-core-ui-input placeholder="placeholder" color="notice" disabled="true"/>
+```html
+<x-fcui-input placeholder="placeholder" color="notice" disabled="true"/>
 ```
 
 ## Input Group
 
 Basic input group with 3 columns
-```php
-<x-fusion-core-ui-input-group columns="3">
+```html
+<x-fcui-input-group columns="3">
 
-    <x-fusion-core-ui-input label="First Name" placeholder="First" type="success"/>
+    <x-fcui-input label="First Name" placeholder="First" type="success"/>
 
-    <x-fusion-core-ui-input label="Middle Name" placeholder="Middle" />
+    <x-fcui-input label="Middle Name" placeholder="Middle" />
 
-    <x-fusion-core-ui-input label="Last Name" placeholder="Last" />
+    <x-fcui-input label="Last Name" placeholder="Last" />
 
-</x-fusion-core-ui-input-group>
+</x-fcui-input-group>
 ```
 ## List Group
 
 Basic List Group with the Nav Link component
-```php
- <x-fusion-core-ui-list-group border="'true'" bg="transparent">
+```html
+ <x-fcui-list-group border="'true'" bg="transparent">
 
-    <x-fusion-core-ui-nav-link href="#" 
+    <x-fcui-nav-link href="#" 
         classes="text-cyan-300 block hover:text-cyan-200 py-1 px-2"
-        icon='<i class="fa-solid fa-face-tired"></i>'>Link 1</x-fusion-core-ui-nav-link>
+        icon='<i class="fa-solid fa-face-tired"></i>'>Link 1</x-fcui-nav-link>
 
-    <x-fusion-core-ui-nav-link href="#" 
+    <x-fcui-nav-link href="#" 
         classes="text-cyan-300 block hover:text-cyan-200 py-1 px-2"
         active="'true'"
-        icon='<i class="fa-solid fa-face-smile"></i>'>Link 2</x-fusion-core-ui-nav-link>
+        icon='<i class="fa-solid fa-face-smile"></i>'>Link 2</x-fcui-nav-link>
 
-    <x-fusion-core-ui-nav-link href="#" 
+    <x-fcui-nav-link href="#" 
         classes="text-cyan-300 block hover:text-cyan-200 py-1 px-2"
-        icon='<i class="fa-solid fa-face-meh"></i>'>Link 3</x-fusion-core-ui-nav-link>
+        icon='<i class="fa-solid fa-face-meh"></i>'>Link 3</x-fcui-nav-link>
 
-</x-fusion-core-ui-list-group>
+</x-fcui-list-group>
 ```
 
 ## Modal
 
 Basic Modal
 
-```php
-<x-fusion-core-ui-modal id="modal1">
+```html
+<x-fcui-modal id="modal1">
     <x-slot:content>
         <p class="text-center">
             Nunc viverra eleifend risus tincidunt sodales. Pellentesque et elit ornare, lobortis diam id, facilisis odio.
@@ -283,11 +324,11 @@ Basic Modal
     </x-slot:content>
 
     <x-slot:triggerButton>
-        <x-fusion-core-ui-button size="default" class="show-modal1">
+        <x-fcui-button size="default" class="show-modal1">
             Show The Modal
-        </x-fusion-core-ui-button>
+        </x-fcui-button>
     </x-slot:triggerButton>
-</x-fusion-core-ui-modal>
+</x-fcui-modal>
 ```
 
 ## Navbar
@@ -295,8 +336,8 @@ Basic Modal
 A basic Navbar using inline `<li>` tags. In it's current implementation it's fairly opinionated and rigid. The goal
 is to make this component far more flexible than it is.
 
-```php
-<x-fusion-core-ui-nav-bar>
+```html
+<x-fcui-nav-bar>
 
     <x-slot:logo>
         <a class="text-4xl" href="#">
@@ -314,39 +355,39 @@ is to make this component far more flexible than it is.
 
     <x-slot:links>
         <li>
-            <x-fusion-core-ui-nav-link>Home</x-fusion-core-ui-nav-link>
+            <x-fcui-nav-link>Home</x-fcui-nav-link>
         </li>
 
         <li>
-            <x-fusion-core-ui-nav-link>About Us</x-fusion-core-ui-nav-link>
+            <x-fcui-nav-link>About Us</x-fcui-nav-link>
         </li>
 
         <li>
-            <x-fusion-core-ui-nav-link>Our Blog</x-fusion-core-ui-nav-link>
+            <x-fcui-nav-link>Our Blog</x-fcui-nav-link>
         </li>
 
         <li>
-            <x-fusion-core-ui-nav-link>Contact Us</x-fusion-core-ui-nav-link>
+            <x-fcui-nav-link>Contact Us</x-fcui-nav-link>
         </li>
     </x-slot:links>
 
     <x-slot:rightMenuButtons>
-        <x-fusion-core-ui-button href="#">Sign In</x-fusion-core-ui-button>
+        <x-fcui-button href="#">Sign In</x-fcui-button>
     </x-slot:rightMenuButtons>
 
     <x-slot:mobileFooter>
-        <x-fusion-core-ui-button href="#" class="mx-auto w-full">Sign In</x-fusion-core-ui-button>
+        <x-fcui-button href="#" class="mx-auto w-full">Sign In</x-fcui-button>
     </x-slot:mobileFooter>
 
-</x-fusion-core-ui-nav-bar>
+</x-fcui-nav-bar>
 ```
 
 ## Navlinks
 
 A basic example of the Navlink
 
-```php
- <x-fusion-core-ui-nav-link href="/example" :active='true'>Contact Us</x-fusion-core-ui-nav-link>
+```html
+ <x-fcui-nav-link href="/example" :active='true'>Contact Us</x-fcui-nav-link>
 ```
 
 ## Pagination
@@ -355,20 +396,20 @@ A basic example of the Navlink
 
 A basic Pagination component with the `previous` and `next` buttons hidden.
 
-```php
-<x-fusion-core-ui-pagination bg="transparent" :prevNextBtns="false"/>
+```html
+<x-fcui-pagination bg="transparent" :prevNextBtns="false"/>
 ```
 
 ## Pricing
 
 A demonstration of the Pricing table component
 
-```php
-<x-fusion-core-ui-pricing columns="3" bg="transparent">
+```html
+<x-fcui-pricing columns="3" bg="transparent">
 
             <x-slot:panels>
 
-                <x-fusion-core-ui-pricing-panel>
+                <x-fcui-pricing-panel>
 
                     <x-slot:productName>Product One</x-slot:productName>
 
@@ -377,7 +418,7 @@ A demonstration of the Pricing table component
                     <x-slot:recurring>/month</x-slot:recurring>
 
                     <x-slot:button>
-                        <x-fusion-core-ui-button href="#" class="w-full mb-6">Select</x-fusion-core-ui-button>
+                        <x-fcui-button href="#" class="w-full mb-6">Select</x-fcui-button>
                     </x-slot:button>
 
                     <x-slot:features>
@@ -385,9 +426,9 @@ A demonstration of the Pricing table component
                         <li><span>Feature Item Two</span></li>
                         <li><span>Feature Item Three</span></li>
                     </x-slot:features>
-                </x-fusion-core-ui-pricing-panel>
+                </x-fcui-pricing-panel>
 
-                <x-fusion-core-ui-pricing-panel>
+                <x-fcui-pricing-panel>
                     <x-slot:specialText>Special!</x-slot:specialText>
 
                     <x-slot:productName>Product Two</x-slot:productName>
@@ -397,7 +438,7 @@ A demonstration of the Pricing table component
                     <x-slot:recurring>/month</x-slot:recurring>
 
                     <x-slot:button>
-                        <x-fusion-core-ui-button href="#" class="w-full mb-6">Select</x-fusion-core-ui-button>
+                        <x-fcui-button href="#" class="w-full mb-6">Select</x-fcui-button>
                     </x-slot:button>
 
                     <x-slot:features>
@@ -405,9 +446,9 @@ A demonstration of the Pricing table component
                         <li><span>Feature Item Two</span></li>
                         <li><span>Feature Item Three</span></li>
                     </x-slot:features>
-                </x-fusion-core-ui-pricing-panel>
+                </x-fcui-pricing-panel>
 
-                <x-fusion-core-ui-pricing-panel>
+                <x-fcui-pricing-panel>
 
                     <x-slot:productName>Product Three</x-slot:productName>
 
@@ -416,7 +457,7 @@ A demonstration of the Pricing table component
                     <x-slot:recurring>/month</x-slot:recurring>
 
                     <x-slot:button>
-                        <x-fusion-core-ui-button href="#" class="w-full mb-6">Select</x-fusion-core-ui-button>
+                        <x-fcui-button href="#" class="w-full mb-6">Select</x-fcui-button>
                     </x-slot:button>
 
                     <x-slot:features>
@@ -424,60 +465,60 @@ A demonstration of the Pricing table component
                         <li><span>Feature Item Two</span></li>
                         <li><span>Feature Item Three</span></li>
                     </x-slot:features>
-                </x-fusion-core-ui-pricing-panel>
+                </x-fcui-pricing-panel>
 
             </x-slot:panels>
 
-        </x-fusion-core-ui-pricing>
+        </x-fcui-pricing>
 ```
 
 ## Progress Bar
 
 Basic Progress bars
 
-```php
-<x-fusion-core-ui-progress-bar type="success" completion="27" innerBarBg="success" height="1"></x-fusion-core-ui-progress-bar>
+```html
+<x-fcui-progress-bar type="success" completion="27" innerBarBg="success" height="1"></x-fcui-progress-bar>
 ```
 
 ## Stats
 
 Basic Stats Block
 
-````php
-<x-fusion-core-ui-stats bg="transparent" spacing="4">
+```html
+<x-fcui-stats bg="transparent" spacing="4">
 
     <x-slot:panels>
 
-        <x-fusion-core-ui-stat-block stat="249" label="Customers" type="info" />
+        <x-fcui-stat-block stat="249" label="Customers" type="info" />
 
-        <x-fusion-core-ui-stat-block stat="$5,810" label="Revenue This Week" type="warning" />
+        <x-fcui-stat-block stat="$5,810" label="Revenue This Week" type="warning" />
 
-        <x-fusion-core-ui-stat-block stat="30" label="Downloads" type="notice"/ >
+        <x-fcui-stat-block stat="30" label="Downloads" type="notice"/ >
 
-        <x-fusion-core-ui-stat-block stat="2,890" label="Views" />
+        <x-fcui-stat-block stat="2,890" label="Views" />
 
     </x-slot:panels>
 
-</x-fusion-core-ui-stats>
-````
+</x-fcui-stats>
+```
 
 ## Switch Radio
 
 A basic Switch (radio button) component
 
-````php
-<x-fusion-core-ui-switch-radio id="uniqueId">
+```html
+<x-fcui-switch-radio id="uniqueId">
     A label
-</x-fusion-core-ui-switch-radio>
-````
+</x-fcui-switch-radio>
+```
 
 ## Table
 
 A basic Table example. As with the Navbar component, there is plenty to be desired when using this
 component and customization / less boilerplate.
 
-````php
-<x-fusion-core-ui-table headBg="success">
+```html
+<x-fcui-table headBg="success">
     <x-slot:head>
         <th scope="col" class="font-medium px-6 py-4 text-left">
             ID
@@ -494,7 +535,7 @@ component and customization / less boilerplate.
     </x-slot:head>
 
     <x-slot:rows>
-        <x-fusion-core-ui-table-row rowStyle="success">
+        <x-fcui-table-row rowStyle="success">
             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
                 43
             </td>
@@ -507,9 +548,9 @@ component and customization / less boilerplate.
             <td class="font-light px-6 py-4 whitespace-nowrap">
                 Active
             </td>
-        </x-fusion-core-ui-table-row>
+        </x-fcui-table-row>
 
-        <x-fusion-core-ui-table-row rowStyle="success">
+        <x-fcui-table-row rowStyle="success">
              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
                 49
              </td>
@@ -522,29 +563,30 @@ component and customization / less boilerplate.
              <td class="font-light px-6 py-4 whitespace-nowrap">
                 Inactive
              </td>
-        </x-fusion-core-ui-table-row>
+        </x-fcui-table-row>
     </x-slot:rows>
 
-</x-fusion-core-ui-table>
-````
+</x-fcui-table>
+```
+
 ## Tabs
 
 Currently, only one style of tabs are available; the default cyan theme. 
 
-```php
-<x-fusion-core-ui-tabs>
-    <x-fusion-core-ui-nav-link
-        classes="border-transparent hover:border-cyan-400 hover:text-cyan-200 w-1/4 border-b-2 py-4 px-1 text-center">Tab 1</x-fusion-core-ui-nav-link>
+```html
+<x-fcui-tabs>
+    <x-fcui-nav-link
+        classes="border-transparent hover:border-cyan-400 hover:text-cyan-200 w-1/4 border-b-2 py-4 px-1 text-center">Tab 1</x-fcui-nav-link>
 
-    <x-fusion-core-ui-nav-link
-        classes="border-transparent hover:border-cyan-400 hover:text-cyan-200 w-1/4 border-b-2 py-4 px-1 text-center">Tab 2</x-fusion-core-ui-nav-link>
+    <x-fcui-nav-link
+        classes="border-transparent hover:border-cyan-400 hover:text-cyan-200 w-1/4 border-b-2 py-4 px-1 text-center">Tab 2</x-fcui-nav-link>
 
-    <x-fusion-core-ui-nav-link
-        classes="border-cyan-400 w-1/4 border-b-4 py-4 px-1 text-center">Tab 3</x-fusion-core-ui-nav-link>
+    <x-fcui-nav-link
+        classes="border-cyan-400 w-1/4 border-b-4 py-4 px-1 text-center">Tab 3</x-fcui-nav-link>
 
-    <x-fusion-core-ui-nav-link
-        classes="border-transparent hover:border-cyan-400 hover:text-cyan-200 w-1/4 border-b-2 py-4 px-1 text-center">Tab 4</x-fusion-core-ui-nav-link>
-</x-fusion-core-ui-tabs>
+    <x-fcui-nav-link
+        classes="border-transparent hover:border-cyan-400 hover:text-cyan-200 w-1/4 border-b-2 py-4 px-1 text-center">Tab 4</x-fcui-nav-link>
+</x-fcui-tabs>
 ```
 
 ---

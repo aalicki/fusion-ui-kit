@@ -85,28 +85,28 @@ ready for production-level projects.
 
 ### Components
 
-- Alerts 
-- Avatars
-- Badge
-- Breadcrumbs
-- Button
-- Button Group
-- Card
-- Dropdown
-- Heading
-- Input
-- Input Group
-- List Group
-- Modal
-- Navbar
-- Nav Links
-- 🚫 Pagination - Not Ready
-- Pricing
-- Progress Bar
-- Stats
-- Switch (Radio)
-- Table
-- Tabs
+* [Alerts](#alerts)
+* [Avatars](#avatars)
+* [Badges](#badges)
+* [Breadcrumbs](#breadcrumbs)
+* [Buttons](#buttons)
+* [Button Groups](#button-group)
+* [Cards](#card)
+* [Dropdowns](#dropdown)
+* [Headings](#heading)
+* [Inputs](#input)
+* [Input Groups](#input-group)
+* [List Groups](#list-group)
+* [Modals](#modal)
+* [Nav Bars](#navbar)
+* [Nav Links](#navlinks)
+* ❌ [Pagination](#pagination) - Broken
+* [Pricing](#pricing)
+* [Progress Bars](#progress-bar)
+* [Stats](#stats)
+* [Switches (Radio)](#switch-radio)
+* [Tables](#table)
+* [Tabs](#tabs)
 ---
 
 ### Javascript

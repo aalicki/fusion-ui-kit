@@ -1,3 +1,5 @@
+<div>&nbsp;</div>
+
 <img src="fusion-core-ui-logo.png">
 
 -----

@@ -355,19 +355,19 @@ is to make this component far more flexible than it is.
 
     <x-slot:links>
         <li>
-            <x-fusion-core-ui-nav-link>Home</x-fusion-core-ui-nav-link>
+            <x-fcui-nav-link>Home</x-fcui-nav-link>
         </li>
 
         <li>
-            <x-fusion-core-ui-nav-link>About Us</x-fusion-core-ui-nav-link>
+            <x-fcui-nav-link>About Us</x-fcui-nav-link>
         </li>
 
         <li>
-            <x-fusion-core-ui-nav-link>Our Blog</x-fusion-core-ui-nav-link>
+            <x-fcui-nav-link>Our Blog</x-fcui-nav-link>
         </li>
 
         <li>
-            <x-fusion-core-ui-nav-link>Contact Us</x-fusion-core-ui-nav-link>
+            <x-fcui-nav-link>Contact Us</x-fcui-nav-link>
         </li>
     </x-slot:links>
 
@@ -405,7 +405,7 @@ A basic Pagination component with the `previous` and `next` buttons hidden.
 A demonstration of the Pricing table component
 
 ```html
-<x-fusion-core-ui-pricing columns="3" bg="transparent">
+<x-fcui-pricing columns="3" bg="transparent">
 
             <x-slot:panels>
 
@@ -418,7 +418,7 @@ A demonstration of the Pricing table component
                     <x-slot:recurring>/month</x-slot:recurring>
 
                     <x-slot:button>
-                        <x-fusion-core-ui-button href="#" class="w-full mb-6">Select</x-fusion-core-ui-button>
+                        <x-fcui-button href="#" class="w-full mb-6">Select</x-fcui-button>
                     </x-slot:button>
 
                     <x-slot:features>
@@ -438,7 +438,7 @@ A demonstration of the Pricing table component
                     <x-slot:recurring>/month</x-slot:recurring>
 
                     <x-slot:button>
-                        <x-fusion-core-ui-button href="#" class="w-full mb-6">Select</x-fusion-core-ui-button>
+                        <x-fcui-button href="#" class="w-full mb-6">Select</x-fcui-button>
                     </x-slot:button>
 
                     <x-slot:features>
@@ -469,7 +469,7 @@ A demonstration of the Pricing table component
 
             </x-slot:panels>
 
-        </x-fusion-core-ui-pricing>
+        </x-fcui-pricing>
 ```
 
 ## Progress Bar
@@ -477,7 +477,7 @@ A demonstration of the Pricing table component
 Basic Progress bars
 
 ```html
-<x-fusion-core-ui-progress-bar type="success" completion="27" innerBarBg="success" height="1"></x-fusion-core-ui-progress-bar>
+<x-fcui-progress-bar type="success" completion="27" innerBarBg="success" height="1"></x-fcui-progress-bar>
 ```
 
 ## Stats
@@ -507,9 +507,9 @@ Basic Stats Block
 A basic Switch (radio button) component
 
 ```html
-<x-fusion-core-ui-switch-radio id="uniqueId">
+<x-fcui-switch-radio id="uniqueId">
     A label
-</x-fusion-core-ui-switch-radio>
+</x-fcui-switch-radio>
 ```
 
 ## Table
@@ -518,7 +518,7 @@ A basic Table example. As with the Navbar component, there is plenty to be desir
 component and customization / less boilerplate.
 
 ```html
-<x-fusion-core-ui-table headBg="success">
+<x-fcui-table headBg="success">
     <x-slot:head>
         <th scope="col" class="font-medium px-6 py-4 text-left">
             ID
@@ -535,7 +535,7 @@ component and customization / less boilerplate.
     </x-slot:head>
 
     <x-slot:rows>
-        <x-fusion-core-ui-table-row rowStyle="success">
+        <x-fcui-table-row rowStyle="success">
             <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
                 43
             </td>

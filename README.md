@@ -1,8 +1,10 @@
 <div>&nbsp;</div>
 
+<div align="center">
 <img src="fusion-core-ui-logo.png">
+</div>
 
------
+----
 
 <div id="header" align="center">
 
@@ -13,6 +15,43 @@
 [![Github All Releases](https://img.shields.io/github/downloads/aalicki/fusion-ui-kit/total.svg?style=flat)]()
 
 </div>
+
+---
+
+## Contents
+
+* [About Fusion Core UI](#about-fusion-core-ui)
+* [Requirements](#requirements)
+* [Installation & Setup](#installing-and-setup)
+* [Current Stability](#current-release-and-stability)
+* [Compatability](#compatability)
+* [Roadmap](#roadmap-2024)
+* [Components](#components)
+  * [Alerts](#alerts)
+  * [Avatars](#avatars)
+  * [Badges](#badges)
+  * [Breadcrumbs](#breadcrumbs)
+  * [Buttons](#buttons)
+  * [Button Groups](#button-group)
+  * [Cards](#card)
+  * [Dropdowns](#dropdown)
+  * [Headings](#heading)
+  * [Inputs](#input)
+  * [Input Groups](#input-group)
+  * [List Groups](#list-group)
+  * [Modals](#modal)
+  * [Nav Bars](#navbar)
+  * [Nav Links](#navlinks)
+  * [Pagination](#pagination) - Broken
+  * [Pricing](#pricing)
+  * [Progress Bars](#progress-bar)
+  * [Stats](#stats)
+  * [Switches (Radio)](#switch-radio)
+  * [Tables](#table)
+  * [Tabs](#tabs)
+* [FAQ](#faq)
+* [Maintainers](#maintainers)
+---
 
 ## About Fusion Core UI
 Fusion Core UI is a Laravel Blade & Tailwind CSS component library. It draws inspiration from
@@ -36,7 +75,7 @@ a clean and bright feel grabbed straight out of a distant future!
 
 ## Compatability
 I want this library to be compatabile with other UI's you may rely on. Therefore, it comes with
-an auto-prefix in order to display the components, `<x-fusion-core-ui-_____>`. This is explained in detail below (coming soon).
+an auto-prefix in order to display the components, `<x-fcui-_____>`. This is explained in detail below (coming soon).
 
 ## Roadmap 2024
 
@@ -93,7 +132,7 @@ More examples, list of properties and demonstration can be found on the [fusionc
 Full Example, includes an Icon, the Type, and a Dismissible button:
 
 ```php
-<x-fusion-core-ui-alert dismissible icon='<i class="fa-solid fa-house"></i>' type="info">Fusion Core UI Default Alert.</x-fusion-core-ui-alert>
+<x-fcui-alert dismissible icon='<i class="fa-solid fa-house"></i>' type="info">Fusion Core UI Default Alert.</x-fcui-alert>
 ```
 
 Basic Example (No, dismissible, icon, with default class):
@@ -509,9 +548,9 @@ component and customization / less boilerplate.
             <td class="font-light px-6 py-4 whitespace-nowrap">
                 Active
             </td>
-        </x-fusion-core-ui-table-row>
+        </x-fcui-table-row>
 
-        <x-fusion-core-ui-table-row rowStyle="success">
+        <x-fcui-table-row rowStyle="success">
              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
                 49
              </td>
@@ -524,29 +563,29 @@ component and customization / less boilerplate.
              <td class="font-light px-6 py-4 whitespace-nowrap">
                 Inactive
              </td>
-        </x-fusion-core-ui-table-row>
+        </x-fcui-table-row>
     </x-slot:rows>
 
-</x-fusion-core-ui-table>
+</x-fcui-table>
 ````
 ## Tabs
 
 Currently, only one style of tabs are available; the default cyan theme. 
 
 ```php
-<x-fusion-core-ui-tabs>
-    <x-fusion-core-ui-nav-link
-        classes="border-transparent hover:border-cyan-400 hover:text-cyan-200 w-1/4 border-b-2 py-4 px-1 text-center">Tab 1</x-fusion-core-ui-nav-link>
+<x-fcui-tabs>
+    <x-fcui-nav-link
+        classes="border-transparent hover:border-cyan-400 hover:text-cyan-200 w-1/4 border-b-2 py-4 px-1 text-center">Tab 1</x-fcui-nav-link>
 
-    <x-fusion-core-ui-nav-link
-        classes="border-transparent hover:border-cyan-400 hover:text-cyan-200 w-1/4 border-b-2 py-4 px-1 text-center">Tab 2</x-fusion-core-ui-nav-link>
+    <x-fcui-nav-link
+        classes="border-transparent hover:border-cyan-400 hover:text-cyan-200 w-1/4 border-b-2 py-4 px-1 text-center">Tab 2</x-fcui-nav-link>
 
-    <x-fusion-core-ui-nav-link
-        classes="border-cyan-400 w-1/4 border-b-4 py-4 px-1 text-center">Tab 3</x-fusion-core-ui-nav-link>
+    <x-fcui-nav-link
+        classes="border-cyan-400 w-1/4 border-b-4 py-4 px-1 text-center">Tab 3</x-fcui-nav-link>
 
-    <x-fusion-core-ui-nav-link
-        classes="border-transparent hover:border-cyan-400 hover:text-cyan-200 w-1/4 border-b-2 py-4 px-1 text-center">Tab 4</x-fusion-core-ui-nav-link>
-</x-fusion-core-ui-tabs>
+    <x-fcui-nav-link
+        classes="border-transparent hover:border-cyan-400 hover:text-cyan-200 w-1/4 border-b-2 py-4 px-1 text-center">Tab 4</x-fcui-nav-link>
+</x-fcui-tabs>
 ```
 
 ---

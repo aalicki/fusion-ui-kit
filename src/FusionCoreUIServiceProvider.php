@@ -24,6 +24,7 @@ use Aalicki\FusionCoreUI\View\Components\ProgressBar;
 use Aalicki\FusionCoreUI\View\Components\StatBlock;
 use Aalicki\FusionCoreUI\View\Components\Stats;
 use Aalicki\FusionCoreUI\View\Components\SwitchRadio;
+use Aalicki\FusionCoreUI\View\Components\Tab;
 use Aalicki\FusionCoreUI\View\Components\Table;
 use Aalicki\FusionCoreUI\View\Components\TableRow;
 use Aalicki\FusionCoreUI\View\Components\Tabs;
@@ -67,6 +68,7 @@ class FusionCoreUIServiceProvider extends ServiceProvider
             SwitchRadio::class,
             Table::class,
             TableRow::class,
+            Tab::class,
             Tabs::class
         ];
 

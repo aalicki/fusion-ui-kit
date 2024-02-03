@@ -575,17 +575,15 @@ Currently, only one style of tabs are available; the default cyan theme.
 
 ```html
 <x-fcui-tabs>
-    <x-fcui-nav-link
-        classes="border-transparent hover:border-cyan-400 hover:text-cyan-200 w-1/4 border-b-2 py-4 px-1 text-center">Tab 1</x-fcui-nav-link>
+    
+    <x-fcui-tab>Tab 1</x-fcui-tab>
 
-    <x-fcui-nav-link
-        classes="border-transparent hover:border-cyan-400 hover:text-cyan-200 w-1/4 border-b-2 py-4 px-1 text-center">Tab 2</x-fcui-nav-link>
+    <x-fcui-tab>Tab 2</x-fcui-tab>
 
-    <x-fcui-nav-link
-        classes="border-cyan-400 w-1/4 border-b-4 py-4 px-1 text-center">Tab 3</x-fcui-nav-link>
+    <x-fcui-tab :active="true">Tab 3</x-fcui-tab>
 
-    <x-fcui-nav-link
-        classes="border-transparent hover:border-cyan-400 hover:text-cyan-200 w-1/4 border-b-2 py-4 px-1 text-center">Tab 4</x-fcui-nav-link>
+    <x-fcui-tab>Tab 4</x-fcui-tab>
+    
 </x-fcui-tabs>
 ```
 

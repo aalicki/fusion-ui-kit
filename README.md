@@ -34,6 +34,7 @@
   * [Buttons](#buttons)
   * [Button Groups](#button-group)
   * [Cards](#card)
+  * [Checkboxes](#checkboxes)
   * [Dropdowns](#dropdown)
   * [Headings](#heading)
   * [Inputs](#input)
@@ -69,7 +70,7 @@ a clean and bright feel grabbed straight out of a distant future!
 1. `composer require aalicki/fusion-core-ui`
 
 ## Current Release and Stability
-`v0.0.2-alpha`
+`v0.0.3-alpha`
 
 ⚠️ Not Production or Development Ready Yet.
 
@@ -92,6 +93,7 @@ ready for production-level projects.
 * [Buttons](#buttons)
 * [Button Groups](#button-group)
 * [Cards](#card)
+* [Checkboxes](#checkboxes)
 * [Dropdowns](#dropdown)
 * [Headings](#heading)
 * [Inputs](#input)
@@ -243,6 +245,14 @@ A default sized button with a theme and icon
         <x-fcui-button href="/next/page">Go To Article</x-fcui-button>
     </x-slot:footer>
 </x-fcui-card>
+```
+
+## Checkboxes
+
+```html
+<x-fcui-checkbox id="checkOne">Label Goes Here</x-fcui-checkbox>
+
+<x-fcui-checkbox id="checkTwo" labelSide="left" type="success">Example Label on the Left</x-fcui-checkbox>
 ```
 
 ## Dropdown

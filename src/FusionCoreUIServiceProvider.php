@@ -9,6 +9,7 @@ use Aalicki\FusionCoreUI\View\Components\Breadcrumbs;
 use Aalicki\FusionCoreUI\View\Components\Button;
 use Aalicki\FusionCoreUI\View\Components\ButtonGroup;
 use Aalicki\FusionCoreUI\View\Components\Card;
+use Aalicki\FusionCoreUI\View\Components\Checkbox;
 use Aalicki\FusionCoreUI\View\Components\DropDown;
 use Aalicki\FusionCoreUI\View\Components\Heading;
 use Aalicki\FusionCoreUI\View\Components\Input;
@@ -24,6 +25,7 @@ use Aalicki\FusionCoreUI\View\Components\ProgressBar;
 use Aalicki\FusionCoreUI\View\Components\StatBlock;
 use Aalicki\FusionCoreUI\View\Components\Stats;
 use Aalicki\FusionCoreUI\View\Components\SwitchRadio;
+use Aalicki\FusionCoreUI\View\Components\Tab;
 use Aalicki\FusionCoreUI\View\Components\Table;
 use Aalicki\FusionCoreUI\View\Components\TableRow;
 use Aalicki\FusionCoreUI\View\Components\Tabs;
@@ -50,6 +52,7 @@ class FusionCoreUIServiceProvider extends ServiceProvider
             Button::class,
             ButtonGroup::class,
             Card::class,
+            Checkbox::class,
             DropDown::class,
             Heading::class,
             Input::class,
@@ -67,6 +70,7 @@ class FusionCoreUIServiceProvider extends ServiceProvider
             SwitchRadio::class,
             Table::class,
             TableRow::class,
+            Tab::class,
             Tabs::class
         ];
 

@@ -64,7 +64,7 @@ class Button extends Component
         $this->class    = $class;
         $this->icon     = $icon;
 
-        // Switch styles based on type of button
+        // Switch sizes based on type of button
         $this->size = match ($size) {
             'lg'    => 'text-2xl px-5 py-4',
             'md'    => 'text-lg px-4 py-3',
@@ -72,7 +72,7 @@ class Button extends Component
             default => 'text-base px-2 py-1',
         };
 
-        // Switch styles based on type of alert
+        // Switch styles based on type of button
         $this->type = match ($type) {
             'warning'   => 'bg-red-300/20 text-red-300/90 ring-1 ring-inset ring-red-300/70 hover:bg-red-400/40',
             'success'   => 'bg-green-300/20 text-green-300/90 ring-1 ring-inset ring-green-300/70 hover:bg-green-400/40',

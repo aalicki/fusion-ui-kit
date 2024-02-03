@@ -9,6 +9,7 @@ use Aalicki\FusionCoreUI\View\Components\Breadcrumbs;
 use Aalicki\FusionCoreUI\View\Components\Button;
 use Aalicki\FusionCoreUI\View\Components\ButtonGroup;
 use Aalicki\FusionCoreUI\View\Components\Card;
+use Aalicki\FusionCoreUI\View\Components\Checkbox;
 use Aalicki\FusionCoreUI\View\Components\DropDown;
 use Aalicki\FusionCoreUI\View\Components\Heading;
 use Aalicki\FusionCoreUI\View\Components\Input;
@@ -51,6 +52,7 @@ class FusionCoreUIServiceProvider extends ServiceProvider
             Button::class,
             ButtonGroup::class,
             Card::class,
+            Checkbox::class,
             DropDown::class,
             Heading::class,
             Input::class,

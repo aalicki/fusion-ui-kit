@@ -490,6 +490,18 @@ Basic Progress bars
 <x-fcui-progress-bar type="success" completion="27" innerBarBg="success" height="1"></x-fcui-progress-bar>
 ```
 
+## Radio Inputs
+
+```html
+<x-fcui-radio-input id="radioOneC" type="warning" name="r3">
+  Radio Label Here
+</x-fcui-radio-input>
+
+<x-fcui-radio-input id="radioTwoC" type="warning" name="r3">
+  Radio Label 2 Here
+</x-fcui-radio-input>
+```
+
 ## Stats
 
 Basic Stats Block

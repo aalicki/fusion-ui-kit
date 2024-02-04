@@ -8,7 +8,7 @@
 
     @if(isset($mobileMenuIcon))
         <div class="lg:hidden">
-            <x-fusion-core-ui-button :icon="$mobileMenuIcon" class="fcui-mobile fcui-mobile flex items-center"></x-fusion-core-ui-button>
+            <x-fcui-button :icon="$mobileMenuIcon" class="fcui-mobile fcui-mobile flex items-center"></x-fcui-button>
         </div>
     @endif
 

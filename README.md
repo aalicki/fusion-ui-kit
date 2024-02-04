@@ -46,6 +46,7 @@
   * [Pagination](#pagination) - Broken
   * [Pricing](#pricing)
   * [Progress Bars](#progress-bar)
+  * [Radio Inputs](#radio-inputs)
   * [Stats](#stats)
   * [Switches (Radio)](#switch-radio)
   * [Tables](#table)
@@ -59,6 +60,14 @@ Fusion Core UI is a Laravel Blade & Tailwind CSS component library. It draws ins
 futuristic styles, clean and sleek. The goal is to allow this library to give your next app or project
 a clean and bright feel grabbed straight out of a distant future!
 
+-----
+
+<div align="center" style="font-size:25px; color:rgb(103 232 249)">
+23 Free Components and Counting!
+</div>
+
+----
+
 ## Requirements
 * Must be using at least **Laravel 9**
 * Must be using at least **PHP 8.1**
@@ -68,6 +77,13 @@ a clean and bright feel grabbed straight out of a distant future!
 ## Installing and Setup
 
 1. `composer require aalicki/fusion-core-ui`
+2. Ensure your `tailwind.config.js` file has the following:
+```html
+ content: [
+        ...
+        './vendor/aalicki/fusion-core-ui/**/*.php',
+    ],
+```
 
 ## Current Release and Stability
 `v0.0.3-alpha`
@@ -105,6 +121,7 @@ ready for production-level projects.
 * ❌ [Pagination](#pagination) - Broken
 * [Pricing](#pricing)
 * [Progress Bars](#progress-bar)
+* [Radion Inputs](#radio-inputs)
 * [Stats](#stats)
 * [Switches (Radio)](#switch-radio)
 * [Tables](#table)
@@ -488,6 +505,18 @@ Basic Progress bars
 
 ```html
 <x-fcui-progress-bar type="success" completion="27" innerBarBg="success" height="1"></x-fcui-progress-bar>
+```
+
+## Radio Inputs
+
+```html
+<x-fcui-radio-input id="radioOneC" type="warning" name="r3">
+  Radio Label Here
+</x-fcui-radio-input>
+
+<x-fcui-radio-input id="radioTwoC" type="warning" name="r3">
+  Radio Label 2 Here
+</x-fcui-radio-input>
 ```
 
 ## Stats

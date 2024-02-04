@@ -22,6 +22,7 @@ use Aalicki\FusionCoreUI\View\Components\Pagination;
 use Aalicki\FusionCoreUI\View\Components\Pricing;
 use Aalicki\FusionCoreUI\View\Components\PricingPanel;
 use Aalicki\FusionCoreUI\View\Components\ProgressBar;
+use Aalicki\FusionCoreUI\View\Components\RadioInput;
 use Aalicki\FusionCoreUI\View\Components\StatBlock;
 use Aalicki\FusionCoreUI\View\Components\Stats;
 use Aalicki\FusionCoreUI\View\Components\SwitchRadio;
@@ -65,6 +66,7 @@ class FusionCoreUIServiceProvider extends ServiceProvider
             Pricing::class,
             PricingPanel::class,
             ProgressBar::class,
+            RadioInput::class,
             Stats::class,
             StatBlock::class,
             SwitchRadio::class,

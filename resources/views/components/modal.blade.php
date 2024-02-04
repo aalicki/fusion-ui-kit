@@ -21,7 +21,7 @@
 
     @if($confirmBtn)
         <div class="mx-auto text-center border-t border-t-white/50 mt-6 pt-6">
-            <x-fusion-core-ui-button size="default" class="close-modal-{{$id}}">Confirm</x-fusion-core-ui-button>
+            <x-fcui-button size="default" class="close-modal-{{$id}}">Confirm</x-fcui-button>
         </div>
     @endif
 </dialog>

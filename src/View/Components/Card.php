@@ -19,11 +19,6 @@ class Card extends Component
      */
     public ?string $title;
 
-    /**
-     * Body content or text inside of card
-     * @var string|mixed|null
-     */
-    public ?string $body;
 
     /**
      * Image used inside the card
@@ -34,13 +29,11 @@ class Card extends Component
     public function __construct(
         $href   = null,
         $title  = null,
-        $body   = null,
         $image  = null
     ) {
 
         $this->href     = $href;
         $this->title    = $title;
-        $this->body     = $body;
         $this->image    = $image;
     }
 

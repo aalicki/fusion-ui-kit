@@ -26,6 +26,12 @@ class Button extends Component
     public ?string $icon;
 
     /**
+     * id value for the button
+     * @var string|null
+     */
+    public ?string $id;
+
+    /**
      * Size of the button
      * Default, Small, Medium, Large
      * @var string|null
@@ -61,6 +67,7 @@ class Button extends Component
         $classes    = null,
         $disabled   = false,
         $icon       = null,
+        $id         = null,
         $size       = null,
         $type       = null,
         $btnType    = 'button', //submit, reset, button (default)
@@ -71,6 +78,7 @@ class Button extends Component
         $this->classes  = $classes;
         $this->disabled = $disabled;
         $this->icon     = $icon;
+        $this->id       = $id;
 
         // Switch sizes based on type of button
         $this->size = match ($size) {

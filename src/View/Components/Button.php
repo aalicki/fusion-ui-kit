@@ -11,7 +11,13 @@ class Button extends Component
      * Any additional classes applied to the button
      * @var string|mixed|null
      */
-    public ?string $class;
+    public ?string $classes;
+
+    /**
+     * Is the button disabled?
+     * @var bool|mixed|null
+     */
+    public ?bool $disabled;
 
     /**
      * Icon
@@ -52,7 +58,8 @@ class Button extends Component
     public ?bool $btnGroup;
 
     public function __construct(
-        $class      = null,
+        $classes    = null,
+        $disabled   = false,
         $icon       = null,
         $size       = null,
         $type       = null,
@@ -61,7 +68,8 @@ class Button extends Component
         $btnGroup   = false,
     ) {
 
-        $this->class    = $class;
+        $this->classes  = $classes;
+        $this->disabled = $disabled;
         $this->icon     = $icon;
 
         // Switch sizes based on type of button

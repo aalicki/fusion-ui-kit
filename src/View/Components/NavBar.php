@@ -20,6 +20,12 @@ class NavBar extends Component
     public ?string $logo;
 
     /**
+     * id of the Nav Bar
+     * @var string|null
+     */
+    public ?string $id;
+
+    /**
      * If Navbar is full width
      * True / False
      * @var bool|mixed|null
@@ -54,6 +60,7 @@ class NavBar extends Component
         $bg                 = null,
         $logo               = null,
         $fullWidth          = false,
+        $id                 = null,
         $rightMenuButtons   = null,
         $mobileMenuIcon     = null,
         $mobileFooter       = null,
@@ -70,6 +77,7 @@ class NavBar extends Component
         };
         $this->logo             = $logo;
         $this->fullWidth        = $fullWidth;
+        $this->id               = $id;
         $this->rightMenuButtons = $rightMenuButtons;
         $this->mobileMenuIcon   = $mobileMenuIcon;
         $this->mobileFooter     = $mobileFooter;

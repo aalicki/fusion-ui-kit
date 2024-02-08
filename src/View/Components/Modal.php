@@ -55,11 +55,11 @@ class Modal extends Component
         $size       = 'default'
     ) {
 
-        $this->confirmBtn = $confirmBtn;
-        $this->id = $id;
-        $this->icon = $icon;
-        $this->backdrop = $backdrop;
-        $this->bg = match ($bg) {
+        $this->confirmBtn   = $confirmBtn;
+        $this->id           = $id;
+        $this->icon         = $icon;
+        $this->backdrop     = $backdrop;
+        $this->bg       = match ($bg) {
             'warning'   => 'bg-red-300 text-red-300/90 ring-1 ring-inset ring-red-300/70',
             'success'   => 'bg-green-400 text-green-700 border border-green-200',
             'info'      => 'bg-blue-300 text-blue-300/90 ring-1 ring-inset ring-blue-300/70',

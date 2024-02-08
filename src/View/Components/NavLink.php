@@ -46,7 +46,7 @@ class NavLink extends Component
 
     public function __construct(
         $active     = false,
-        $classes    = "text-cyan-300 block hover:text-cyan-200 py-1 px-2",
+        $classes    = null,
         $href       = null,
         $icon       = null,
         $id         = null,

@@ -1,6 +1,7 @@
 <nav
     class="{{$classes}} {{$bg}} relative px-4 py-4 flex justify-between items-center
-            @if($fullWidth) w-full @else border rounded-lg @endif">
+            @if($fullWidth) w-full @else border rounded-lg @endif"
+    @if(isset($id)) id="{{$id}}" @endif>
 
     @if(isset($logo))
         {!! $logo !!}

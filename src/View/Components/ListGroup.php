@@ -20,18 +20,7 @@ class ListGroup extends Component
     public ?bool $border;
 
     public function __construct(
-
-        /**
-         * Background theme
-         * @var string|mixed|null
-         */
-        $bg = null,
-
-        /**
-         * Display a border around the ilist group
-         * True / False
-         * @var bool|null
-         */
+        $bg     = null,
         $border = false,
     ) {
 

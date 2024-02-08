@@ -44,6 +44,12 @@ class Input extends Component
     public ?string $tip;
 
     /**
+     * Text color of the tip
+     * @var string|null
+     */
+    public ?string $tipColor;
+
+    /**
      * Placeholder text
      * @var string|mixed|null
      */
@@ -96,6 +102,13 @@ class Input extends Component
         $this->id           = $id;
         $this->label        = $label;
         $this->tip          = $tip;
+        $this->tipColor     = match ($type) {
+            'warning'       => 'text-red-200/60',
+            'success'       => 'text-green-200/60',
+            'info'          => 'text-blue-200/60',
+            'notice'        => 'text-yellow-200/60',
+            default         => 'text-cyan-200/60'
+        };
         $this->placeholder  = $placeholder;
         $this->size         = match ($size) {
             'lg' => 'text-2xl px-5 py-4',

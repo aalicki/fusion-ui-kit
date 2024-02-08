@@ -15,6 +15,12 @@ class Modal extends Component
     public ?string $confirmBtn;
 
     /**
+     * Confirm Button UI Theme
+     * @var string|null
+     */
+    public ?string $confirmBtnType;
+
+    /**
      * id of the modal (Required for JS)
      * @var string|mixed|null
      */
@@ -47,24 +53,25 @@ class Modal extends Component
     public ?string $size;
 
     public function __construct(
-        $confirmBtn = false,
-        $id         = null,
-        $icon       = null,
-        $backdrop   = false,
-        $bg         = null,
-        $size       = 'default'
+        $confirmBtn     = false,
+        $id             = null,
+        $icon           = null,
+        $backdrop       = false,
+        $bg             = null,
+        $size           = 'default'
     ) {
 
-        $this->confirmBtn = $confirmBtn;
-        $this->id = $id;
-        $this->icon = $icon;
-        $this->backdrop = $backdrop;
-        $this->bg = match ($bg) {
-            'warning'   => 'bg-red-300 text-red-300/90 ring-1 ring-inset ring-red-300/70',
-            'success'   => 'bg-green-400 text-green-700 border border-green-200',
-            'info'      => 'bg-blue-300 text-blue-300/90 ring-1 ring-inset ring-blue-300/70',
-            'notice'    => 'bg-yellow-300 text-yellow-300/90 ring-1 ring-inset ring-yellow-300/70',
-            default     => 'bg-cyan-700 text-cyan-400 ring-1 ring-inset ring-cyan-300/70',
+        $this->confirmBtn       = $confirmBtn;
+        $this->confirmBtnType   = $bg;
+        $this->id               = $id;
+        $this->icon             = $icon;
+        $this->backdrop         = $backdrop;
+        $this->bg       = match ($bg) {
+            'warning'   => 'bg-red-700/60 text-red-300/90 ring-1 ring-inset ring-red-300/70',
+            'success'   => 'bg-green-700/60 text-green-300/90 border border-green-500',
+            'info'      => 'bg-blue-700/60 text-blue-300/90 ring-1 ring-inset ring-blue-300/70',
+            'notice'    => 'bg-yellow-700/60 text-yellow-300/90 ring-1 ring-inset ring-yellow-300/70',
+            default     => 'bg-cyan-700/60 text-cyan-300/90 ring-1 ring-inset ring-cyan-300/70',
         };
         $this->size = match ($size) {
             'lg'    => 'text-2xl px-5 py-4 w-full',

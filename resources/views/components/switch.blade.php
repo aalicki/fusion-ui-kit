@@ -5,7 +5,8 @@
         <input
             id="{{$id}}"
             type="checkbox"
-            class="peer sr-only">
+            class="peer sr-only"
+            value="{{$value}}">
 
         <div class="h-5 rounded-full shadow-inner {{$bg}} w-14"></div>
 

@@ -15,6 +15,12 @@ class Table extends Component
     public ?string $headBg;
 
     /**
+     * id for the table
+     * @var string|null
+     */
+    public ?string $id;
+
+    /**
      * Border color and style of outline border
      * @var string|null
      */
@@ -22,6 +28,7 @@ class Table extends Component
 
     public function __construct(
         $headBg = 'default',
+        $id     = null
     ) {
 
         $this->headBg = match ($headBg) {
@@ -32,6 +39,8 @@ class Table extends Component
             'notice'        => 'bg-yellow-800  border-b-yellow-500',
             default         => 'bg-cyan-800  border-b-cyan-500',
         };
+
+        $this->id = $id;
 
         $this->outerBorder = match ($headBg) {
             'transparent'   => 'border-0',

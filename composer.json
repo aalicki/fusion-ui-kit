@@ -33,5 +33,7 @@
                 "Aalicki\\FusionCoreUI\\FusionCoreUIServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

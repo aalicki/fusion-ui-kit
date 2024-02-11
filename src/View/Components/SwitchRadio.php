@@ -26,9 +26,16 @@ class SwitchRadio extends Component
      */
     public ?string $dialBg;
 
+    /**
+     * Value of the radio input
+     * @var string|null
+     */
+    public ?string $value;
+
     public function __construct(
         $bg     = 'default',
         $id     = null,
+        $value  = null
     ) {
 
         $this->bg = match ($bg) {
@@ -48,7 +55,8 @@ class SwitchRadio extends Component
             default         => 'bg-cyan-600/70 peer-checked:bg-cyan-300',
         };
 
-        $this->id = $id;
+        $this->id       = $id;
+        $this->value    = $value;
     }
 
     public function render()

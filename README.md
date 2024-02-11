@@ -43,7 +43,6 @@
   * [Modals](#modal)
   * [Nav Bars](#navbar)
   * [Nav Links](#navlinks)
-  * [Pagination](#pagination) - Broken
   * [Pricing](#pricing)
   * [Progress Bars](#progress-bar)
   * [Radio Inputs](#radio-inputs)
@@ -63,7 +62,7 @@ a clean and bright feel grabbed straight out of a distant future!
 -----
 
 <div align="center" style="font-size:25px; color:rgb(103 232 249)">
-23 Free Components and Counting!
+22 Free Components and Counting!
 </div>
 
 ----
@@ -118,7 +117,6 @@ ready for production-level projects.
 * [Modals](#modal)
 * [Nav Bars](#navbar)
 * [Nav Links](#navlinks)
-* ❌ [Pagination](#pagination) - Broken
 * [Pricing](#pricing)
 * [Progress Bars](#progress-bar)
 * [Radion Inputs](#radio-inputs)
@@ -415,16 +413,6 @@ A basic example of the Navlink
 
 ```html
  <x-fcui-nav-link href="/example" :active='true'>Contact Us</x-fcui-nav-link>
-```
-
-## Pagination
-
-⚠️ This component is not functional yet.
-
-A basic Pagination component with the `previous` and `next` buttons hidden.
-
-```html
-<x-fcui-pagination bg="transparent" :prevNextBtns="false"/>
 ```
 
 ## Pricing

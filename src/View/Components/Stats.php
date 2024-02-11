@@ -29,7 +29,7 @@ class Stats extends Component
     public function __construct(
         $bg         = 'default',
         $columns    = 4,
-        $spacing    = "1px"
+        $spacing    = "1"
     ) {
 
         $this->bg = match ($bg) {

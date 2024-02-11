@@ -21,7 +21,7 @@
 
     {{$button}}
 
-    <ol class="list-disc w-4/5 mx-auto font-semibold text-sm space-y-1">
+    <ol class="mt-6 list-disc w-4/5 mx-auto font-semibold text-sm space-y-1">
         {{$features}}
     </ol>
 </li>

@@ -68,9 +68,10 @@ a clean and bright feel grabbed straight out of a distant future!
 ----
 
 ## Requirements
-* Must be using at least **Laravel 9**
-* Must be using at least **PHP 8.1**
-* Must be using **Tailwind CSS V3.4**
+* **Laravel 9**
+*  **PHP 8.1**
+* **Alpine.js** (https://alpinejs.dev/)
+* **Tailwind CSS V3.4**
   * You will need the Tailwind Form Plugin: https://github.com/tailwindlabs/tailwindcss-forms
 
 ## Installing and Setup
@@ -85,7 +86,7 @@ a clean and bright feel grabbed straight out of a distant future!
 ```
 
 ## Current Release and Stability
-`v0.0.3-alpha`
+`v0.0.1-beta`
 
 ⚠️ Not Production or Development Ready Yet.
 

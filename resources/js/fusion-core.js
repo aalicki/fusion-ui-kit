@@ -13,7 +13,7 @@
     document.addEventListener('DOMContentLoaded', function() {
         // open
         const burger = document.querySelectorAll('.fcui-mobile');
-        const menu = document.querySelectorAll('.navbar-menu');
+        const menu = document.querySelectorAll('.fcui-navbar-menu');
 
         if (burger.length && menu.length) {
             for (var i = 0; i < burger.length; i++) {
@@ -26,8 +26,8 @@
         }
 
         // close
-        const close = document.querySelectorAll('.navbar-close');
-        const backdrop = document.querySelectorAll('.navbar-backdrop');
+        const close = document.querySelectorAll('.fcui-navbar-close');
+        const backdrop = document.querySelectorAll('.fcui-navbar-backdrop');
 
         if (close.length) {
             for (var i = 0; i < close.length; i++) {
@@ -49,5 +49,4 @@
             }
         }
     });
-
 }());

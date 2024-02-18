@@ -21,7 +21,7 @@
         "php": "^8.1.0",
         "gehrisandro/tailwind-merge-laravel": "^1.0"
     },
-    "license": "GPL-3.0 license",
+    "license": "GPL-3.0-only",
     "autoload": {
         "psr-4": {
             "Aalicki\\FusionCoreUI\\": "src"
